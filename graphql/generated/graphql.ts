@@ -867,6 +867,8 @@ export type EntryInterface = {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -1813,6 +1815,16 @@ export type EntryInterfaceRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+/** This is the interface implemented by all entries. */
+export type EntryInterfaceSeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type EntryRelationCriteriaInput = {
   /** Narrows the query results to only entries that were posted on or after a certain date. */
   after: InputMaybe<Scalars['String']['input']>;
@@ -2253,6 +2265,8 @@ export type Query = {
   /** Entries within the “Pages” section. */
   pagesEntries: Maybe<Array<Maybe<PagesSectionEntryUnion>>>;
   ping: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** This query is used to query for a single user. */
   user: Maybe<UserInterface>;
   /** This query is used to return the number of users. */
@@ -3634,6 +3648,15 @@ export type QueryPagesEntriesArgs = {
 };
 
 
+export type QuerySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
+
 export type QueryUserArgs = {
   archived: InputMaybe<Scalars['Boolean']['input']>;
   assetUploaders: InputMaybe<Scalars['Boolean']['input']>;
@@ -3767,6 +3790,16 @@ export type QueryUsersArgs = {
   uri: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   username: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
+
+/** Optional - The SEOmatic environment that should be used */
+export enum SeomaticEnvironment {
+  /** Live production environment, with indexing enabled */
+  Live = 'live',
+  /** Local Development environment, with debugging enabled and indexing disabled */
+  Local = 'local',
+  /** Staging environment, with indexing disabled */
+  Staging = 'staging'
+}
 
 export enum SeomaticFrontendTemplate {
   /** The ads.txt file */
@@ -4355,6 +4388,8 @@ export type BlockCode_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -5291,6 +5326,15 @@ export type BlockCode_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockCode_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockColumn_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -5385,6 +5429,8 @@ export type BlockColumn_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -6420,6 +6466,15 @@ export type BlockColumn_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockColumn_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockImage_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -6515,6 +6570,8 @@ export type BlockImage_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   showCaption: Maybe<Scalars['Boolean']['output']>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
@@ -7509,6 +7566,15 @@ export type BlockImage_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockImage_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockImages_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -7605,6 +7671,8 @@ export type BlockImages_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   showCaption: Maybe<Scalars['Boolean']['output']>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
@@ -8604,6 +8672,15 @@ export type BlockImages_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockImages_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockLinks_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -8698,6 +8775,8 @@ export type BlockLinks_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -9634,6 +9713,15 @@ export type BlockLinks_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockLinks_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockQuote_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -9729,6 +9817,8 @@ export type BlockQuote_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -10666,6 +10756,15 @@ export type BlockQuote_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockQuote_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockSection_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -10761,6 +10860,8 @@ export type BlockSection_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -11804,6 +11905,15 @@ export type BlockSection_EntryRevisionsArgs = {
 };
 
 
+export type BlockSection_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
+
 export type BlockSection_EntrySpaceBetweenArgs = {
   label: InputMaybe<Scalars['Boolean']['input']>;
 };
@@ -11907,6 +12017,8 @@ export type BlockSpacer_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -12848,6 +12960,15 @@ export type BlockSpacer_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockSpacer_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockTextImage_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -12945,6 +13066,8 @@ export type BlockTextImage_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   showCaption: Maybe<Scalars['Boolean']['output']>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
@@ -13944,6 +14067,15 @@ export type BlockTextImage_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockTextImage_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockText_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -14038,6 +14170,8 @@ export type BlockText_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -14974,6 +15108,15 @@ export type BlockText_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockText_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockVideo_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -15069,6 +15212,8 @@ export type BlockVideo_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -16005,6 +16150,15 @@ export type BlockVideo_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type BlockVideo_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 
@@ -24920,6 +25074,8 @@ export type EntryInterface = {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -25866,6 +26022,16 @@ export type EntryInterfaceRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+/** This is the interface implemented by all entries. */
+export type EntryInterfaceSeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type EntryRelationCriteriaInput = {
   /** Narrows the query results to only entries that were posted on or after a certain date. */
   after: InputMaybe<Scalars['String']['input']>;
@@ -26306,6 +26472,8 @@ export type Query = {
   /** Entries within the “Pages” section. */
   pagesEntries: Maybe<Array<Maybe<PagesSectionEntryUnion>>>;
   ping: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** This query is used to query for a single user. */
   user: Maybe<UserInterface>;
   /** This query is used to return the number of users. */
@@ -27687,6 +27855,15 @@ export type QueryPagesEntriesArgs = {
 };
 
 
+export type QuerySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
+
 export type QueryUserArgs = {
   archived: InputMaybe<Scalars['Boolean']['input']>;
   assetUploaders: InputMaybe<Scalars['Boolean']['input']>;
@@ -27820,6 +27997,16 @@ export type QueryUsersArgs = {
   uri: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   username: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
+
+/** Optional - The SEOmatic environment that should be used */
+export enum SeomaticEnvironment {
+  /** Live production environment, with indexing enabled */
+  Live = 'live',
+  /** Local Development environment, with debugging enabled and indexing disabled */
+  Local = 'local',
+  /** Staging environment, with indexing disabled */
+  Staging = 'staging'
+}
 
 export enum SeomaticFrontendTemplate {
   /** The ads.txt file */
@@ -28408,6 +28595,8 @@ export type BlockCode_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -29344,6 +29533,15 @@ export type BlockCode_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockCode_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockColumn_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -29438,6 +29636,8 @@ export type BlockColumn_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -30473,6 +30673,15 @@ export type BlockColumn_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockColumn_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockImage_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -30568,6 +30777,8 @@ export type BlockImage_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   showCaption: Maybe<Scalars['Boolean']['output']>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
@@ -31562,6 +31773,15 @@ export type BlockImage_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockImage_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockImages_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -31658,6 +31878,8 @@ export type BlockImages_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   showCaption: Maybe<Scalars['Boolean']['output']>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
@@ -32657,6 +32879,15 @@ export type BlockImages_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockImages_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockLinks_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -32751,6 +32982,8 @@ export type BlockLinks_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -33687,6 +33920,15 @@ export type BlockLinks_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockLinks_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockQuote_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -33782,6 +34024,8 @@ export type BlockQuote_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -34719,6 +34963,15 @@ export type BlockQuote_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockQuote_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockSection_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -34814,6 +35067,8 @@ export type BlockSection_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -35857,6 +36112,15 @@ export type BlockSection_EntryRevisionsArgs = {
 };
 
 
+export type BlockSection_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
+
 export type BlockSection_EntrySpaceBetweenArgs = {
   label: InputMaybe<Scalars['Boolean']['input']>;
 };
@@ -35960,6 +36224,8 @@ export type BlockSpacer_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -36901,6 +37167,15 @@ export type BlockSpacer_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockSpacer_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockTextImage_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -36998,6 +37273,8 @@ export type BlockTextImage_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   showCaption: Maybe<Scalars['Boolean']['output']>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
@@ -37997,6 +38274,15 @@ export type BlockTextImage_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockTextImage_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockText_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -38091,6 +38377,8 @@ export type BlockText_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -39027,6 +39315,15 @@ export type BlockText_EntryRevisionsArgs = {
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
 };
 
+
+export type BlockText_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
+};
+
 export type BlockVideo_Entry = ElementInterface & EntryInterface & {
   /** Return a number of related elements for a field. */
   _count: Maybe<Scalars['Int']['output']>;
@@ -39122,6 +39419,8 @@ export type BlockVideo_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -40058,6 +40357,15 @@ export type BlockVideo_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type BlockVideo_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 

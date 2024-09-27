@@ -1,5 +1,6 @@
 import { gql } from '@apollo/client';
-import {FRAGMENT_ENTRY_DATA} from '@/graphql/fragments/entry/data';
+import { FRAGMENT_ENTRY_DATA } from '@/graphql/fragments/entry/data';
+
 
 export const GetNewsEntries = gql`
     query GetNewsEntries(

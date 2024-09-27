@@ -1,5 +1,5 @@
 overwrite: true
-schema: ${GQL_API_URL}
+schema: "http://baukasten.test/api"
 documents:
   - "graphql/queries/**/*.ts"
   - "graphql/fragments/**/*.ts"
