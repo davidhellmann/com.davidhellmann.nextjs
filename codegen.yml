@@ -1,0 +1,24 @@
+overwrite: true
+schema: ${GQL_API_URL}
+documents:
+  - "graphql/queries/**/*.ts"
+  - "graphql/fragments/**/*.ts"
+generates:
+  graphql/generated/:
+    preset:
+      'client'
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      withHooks: true
+      dedupeFragments: true
+      skipTypename: true
+      onlyOperationTypes: true
+      maybeValue: "T"
+      avoidOptionals:
+        field: true
+        inputValue: true
+        object: true
+        defaultValue: true
