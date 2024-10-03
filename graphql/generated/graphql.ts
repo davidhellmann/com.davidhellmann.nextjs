@@ -992,7 +992,7 @@ export type EntryInterfaceAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -1092,7 +1092,7 @@ export type EntryInterfaceChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -1192,7 +1192,7 @@ export type EntryInterfaceDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -1292,7 +1292,7 @@ export type EntryInterfaceDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -1392,7 +1392,7 @@ export type EntryInterfaceLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -1492,7 +1492,7 @@ export type EntryInterfaceNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -1592,7 +1592,7 @@ export type EntryInterfaceParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -1692,7 +1692,7 @@ export type EntryInterfacePrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -1792,7 +1792,7 @@ export type EntryInterfaceRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -1959,7 +1959,7 @@ export type EntryRelationCriteriaInput = {
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   /** Narrows the query results based on the sections the entries belong to, per the sections’ IDs. */
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
@@ -2632,7 +2632,7 @@ export type QueryBuilder2ColumnsFieldEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -2727,7 +2727,7 @@ export type QueryBuilderContentBlocksFieldEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -2822,7 +2822,7 @@ export type QueryBuilderContentFieldEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -2921,7 +2921,7 @@ export type QueryEntriesArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -3020,7 +3020,7 @@ export type QueryEntryArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -3119,7 +3119,7 @@ export type QueryEntryCountArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -3213,7 +3213,7 @@ export type QueryErrorPagesEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -3307,7 +3307,7 @@ export type QueryHomeEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -3530,7 +3530,7 @@ export type QueryNewsEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -3624,7 +3624,7 @@ export type QueryPagesEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -4511,7 +4511,7 @@ export type BlockCode_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -4610,7 +4610,7 @@ export type BlockCode_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -4709,7 +4709,7 @@ export type BlockCode_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -4808,7 +4808,7 @@ export type BlockCode_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -4907,7 +4907,7 @@ export type BlockCode_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -5006,7 +5006,7 @@ export type BlockCode_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -5105,7 +5105,7 @@ export type BlockCode_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -5204,7 +5204,7 @@ export type BlockCode_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -5303,7 +5303,7 @@ export type BlockCode_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -5552,7 +5552,7 @@ export type BlockColumn_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -5651,7 +5651,7 @@ export type BlockColumn_EntryBuilderContentBlocksArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -5750,7 +5750,7 @@ export type BlockColumn_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -5849,7 +5849,7 @@ export type BlockColumn_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -5948,7 +5948,7 @@ export type BlockColumn_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -6047,7 +6047,7 @@ export type BlockColumn_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -6146,7 +6146,7 @@ export type BlockColumn_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -6245,7 +6245,7 @@ export type BlockColumn_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -6344,7 +6344,7 @@ export type BlockColumn_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -6443,7 +6443,7 @@ export type BlockColumn_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -6694,7 +6694,7 @@ export type BlockImage_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -6793,7 +6793,7 @@ export type BlockImage_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -6892,7 +6892,7 @@ export type BlockImage_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -6991,7 +6991,7 @@ export type BlockImage_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -7147,7 +7147,7 @@ export type BlockImage_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -7246,7 +7246,7 @@ export type BlockImage_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -7345,7 +7345,7 @@ export type BlockImage_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -7444,7 +7444,7 @@ export type BlockImage_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -7543,7 +7543,7 @@ export type BlockImage_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -7795,7 +7795,7 @@ export type BlockImages_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -7894,7 +7894,7 @@ export type BlockImages_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -7993,7 +7993,7 @@ export type BlockImages_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -8092,7 +8092,7 @@ export type BlockImages_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -8253,7 +8253,7 @@ export type BlockImages_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -8352,7 +8352,7 @@ export type BlockImages_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -8451,7 +8451,7 @@ export type BlockImages_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -8550,7 +8550,7 @@ export type BlockImages_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -8649,7 +8649,7 @@ export type BlockImages_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -8898,7 +8898,7 @@ export type BlockLinks_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -8997,7 +8997,7 @@ export type BlockLinks_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -9096,7 +9096,7 @@ export type BlockLinks_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -9195,7 +9195,7 @@ export type BlockLinks_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -9294,7 +9294,7 @@ export type BlockLinks_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -9393,7 +9393,7 @@ export type BlockLinks_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -9492,7 +9492,7 @@ export type BlockLinks_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -9591,7 +9591,7 @@ export type BlockLinks_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -9690,7 +9690,7 @@ export type BlockLinks_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -9941,7 +9941,7 @@ export type BlockQuote_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -10040,7 +10040,7 @@ export type BlockQuote_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -10139,7 +10139,7 @@ export type BlockQuote_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -10238,7 +10238,7 @@ export type BlockQuote_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -10337,7 +10337,7 @@ export type BlockQuote_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -10436,7 +10436,7 @@ export type BlockQuote_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -10535,7 +10535,7 @@ export type BlockQuote_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -10634,7 +10634,7 @@ export type BlockQuote_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -10733,7 +10733,7 @@ export type BlockQuote_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -10985,7 +10985,7 @@ export type BlockSection_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -11089,7 +11089,7 @@ export type BlockSection_EntryBuilderContentBlocksArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -11188,7 +11188,7 @@ export type BlockSection_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -11287,7 +11287,7 @@ export type BlockSection_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -11386,7 +11386,7 @@ export type BlockSection_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -11485,7 +11485,7 @@ export type BlockSection_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -11584,7 +11584,7 @@ export type BlockSection_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -11683,7 +11683,7 @@ export type BlockSection_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -11782,7 +11782,7 @@ export type BlockSection_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -11881,7 +11881,7 @@ export type BlockSection_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -12140,7 +12140,7 @@ export type BlockSpacer_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -12239,7 +12239,7 @@ export type BlockSpacer_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -12338,7 +12338,7 @@ export type BlockSpacer_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -12437,7 +12437,7 @@ export type BlockSpacer_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -12541,7 +12541,7 @@ export type BlockSpacer_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -12640,7 +12640,7 @@ export type BlockSpacer_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -12739,7 +12739,7 @@ export type BlockSpacer_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -12838,7 +12838,7 @@ export type BlockSpacer_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -12937,7 +12937,7 @@ export type BlockSpacer_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -13190,7 +13190,7 @@ export type BlockTextImage_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -13289,7 +13289,7 @@ export type BlockTextImage_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -13388,7 +13388,7 @@ export type BlockTextImage_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -13487,7 +13487,7 @@ export type BlockTextImage_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -13648,7 +13648,7 @@ export type BlockTextImage_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -13747,7 +13747,7 @@ export type BlockTextImage_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -13846,7 +13846,7 @@ export type BlockTextImage_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -13945,7 +13945,7 @@ export type BlockTextImage_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -14044,7 +14044,7 @@ export type BlockTextImage_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -14293,7 +14293,7 @@ export type BlockText_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -14392,7 +14392,7 @@ export type BlockText_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -14491,7 +14491,7 @@ export type BlockText_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -14590,7 +14590,7 @@ export type BlockText_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -14689,7 +14689,7 @@ export type BlockText_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -14788,7 +14788,7 @@ export type BlockText_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -14887,7 +14887,7 @@ export type BlockText_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -14986,7 +14986,7 @@ export type BlockText_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -15085,7 +15085,7 @@ export type BlockText_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -15337,7 +15337,7 @@ export type BlockVideo_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -15436,7 +15436,7 @@ export type BlockVideo_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -15535,7 +15535,7 @@ export type BlockVideo_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -15634,7 +15634,7 @@ export type BlockVideo_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -15733,7 +15733,7 @@ export type BlockVideo_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -15832,7 +15832,7 @@ export type BlockVideo_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -15931,7 +15931,7 @@ export type BlockVideo_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -16030,7 +16030,7 @@ export type BlockVideo_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -16129,7 +16129,7 @@ export type BlockVideo_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -16281,7 +16281,9 @@ export type EntryContentBuilder_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
-  seomatic: Maybe<Scalars['String']['output']>;
+  seo: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -16403,7 +16405,7 @@ export type EntryContentBuilder_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -16502,7 +16504,7 @@ export type EntryContentBuilder_EntryBuilderContentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -16601,7 +16603,7 @@ export type EntryContentBuilder_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -16700,7 +16702,7 @@ export type EntryContentBuilder_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -16799,7 +16801,7 @@ export type EntryContentBuilder_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -16950,7 +16952,7 @@ export type EntryContentBuilder_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -17049,7 +17051,7 @@ export type EntryContentBuilder_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -17148,7 +17150,7 @@ export type EntryContentBuilder_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -17247,7 +17249,7 @@ export type EntryContentBuilder_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -17346,7 +17348,7 @@ export type EntryContentBuilder_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -17367,6 +17369,15 @@ export type EntryContentBuilder_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type EntryContentBuilder_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 export type EntryError_Entry = ElementInterface & EntryInterface & {
@@ -17465,7 +17476,9 @@ export type EntryError_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
-  seomatic: Maybe<Scalars['String']['output']>;
+  seo: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -17587,7 +17600,7 @@ export type EntryError_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -17686,7 +17699,7 @@ export type EntryError_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -17785,7 +17798,7 @@ export type EntryError_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -17884,7 +17897,7 @@ export type EntryError_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -18035,7 +18048,7 @@ export type EntryError_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -18134,7 +18147,7 @@ export type EntryError_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -18233,7 +18246,7 @@ export type EntryError_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -18332,7 +18345,7 @@ export type EntryError_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -18431,7 +18444,7 @@ export type EntryError_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -18452,6 +18465,15 @@ export type EntryError_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type EntryError_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 export type EntryHome_Entry = ElementInterface & EntryInterface & {
@@ -18551,7 +18573,9 @@ export type EntryHome_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
-  seomatic: Maybe<Scalars['String']['output']>;
+  seo: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -18673,7 +18697,7 @@ export type EntryHome_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -18772,7 +18796,7 @@ export type EntryHome_EntryBuilderContentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -18871,7 +18895,7 @@ export type EntryHome_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -18970,7 +18994,7 @@ export type EntryHome_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -19069,7 +19093,7 @@ export type EntryHome_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -19220,7 +19244,7 @@ export type EntryHome_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -19319,7 +19343,7 @@ export type EntryHome_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -19418,7 +19442,7 @@ export type EntryHome_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -19517,7 +19541,7 @@ export type EntryHome_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -19616,7 +19640,7 @@ export type EntryHome_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -19637,6 +19661,15 @@ export type EntryHome_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type EntryHome_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 export type EntryListNews_Entry = ElementInterface & EntryInterface & {
@@ -19735,7 +19768,9 @@ export type EntryListNews_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
-  seomatic: Maybe<Scalars['String']['output']>;
+  seo: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -19857,7 +19892,7 @@ export type EntryListNews_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -19956,7 +19991,7 @@ export type EntryListNews_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -20055,7 +20090,7 @@ export type EntryListNews_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -20154,7 +20189,7 @@ export type EntryListNews_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -20305,7 +20340,7 @@ export type EntryListNews_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -20404,7 +20439,7 @@ export type EntryListNews_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -20503,7 +20538,7 @@ export type EntryListNews_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -20602,7 +20637,7 @@ export type EntryListNews_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -20701,7 +20736,7 @@ export type EntryListNews_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -20722,6 +20757,15 @@ export type EntryListNews_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type EntryListNews_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 export type EntryNewsDetail_Entry = ElementInterface & EntryInterface & {
@@ -20821,7 +20865,9 @@ export type EntryNewsDetail_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
-  seomatic: Maybe<Scalars['String']['output']>;
+  seo: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -20943,7 +20989,7 @@ export type EntryNewsDetail_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -21042,7 +21088,7 @@ export type EntryNewsDetail_EntryBuilderContentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -21141,7 +21187,7 @@ export type EntryNewsDetail_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -21240,7 +21286,7 @@ export type EntryNewsDetail_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -21339,7 +21385,7 @@ export type EntryNewsDetail_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -21490,7 +21536,7 @@ export type EntryNewsDetail_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -21589,7 +21635,7 @@ export type EntryNewsDetail_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -21688,7 +21734,7 @@ export type EntryNewsDetail_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -21787,7 +21833,7 @@ export type EntryNewsDetail_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -21886,7 +21932,7 @@ export type EntryNewsDetail_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -21907,6 +21953,15 @@ export type EntryNewsDetail_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type EntryNewsDetail_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 export type ErrorPagesSectionEntryUnion = EntryError_Entry;
@@ -25199,7 +25254,7 @@ export type EntryInterfaceAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -25299,7 +25354,7 @@ export type EntryInterfaceChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -25399,7 +25454,7 @@ export type EntryInterfaceDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -25499,7 +25554,7 @@ export type EntryInterfaceDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -25599,7 +25654,7 @@ export type EntryInterfaceLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -25699,7 +25754,7 @@ export type EntryInterfaceNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -25799,7 +25854,7 @@ export type EntryInterfaceParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -25899,7 +25954,7 @@ export type EntryInterfacePrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -25999,7 +26054,7 @@ export type EntryInterfaceRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -26166,7 +26221,7 @@ export type EntryRelationCriteriaInput = {
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   /** Narrows the query results based on the sections the entries belong to, per the sections’ IDs. */
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
@@ -26839,7 +26894,7 @@ export type QueryBuilder2ColumnsFieldEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -26934,7 +26989,7 @@ export type QueryBuilderContentBlocksFieldEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -27029,7 +27084,7 @@ export type QueryBuilderContentFieldEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -27128,7 +27183,7 @@ export type QueryEntriesArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -27227,7 +27282,7 @@ export type QueryEntryArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -27326,7 +27381,7 @@ export type QueryEntryCountArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -27420,7 +27475,7 @@ export type QueryErrorPagesEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -27514,7 +27569,7 @@ export type QueryHomeEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -27737,7 +27792,7 @@ export type QueryNewsEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -27831,7 +27886,7 @@ export type QueryPagesEntriesArgs = {
   revisions: InputMaybe<Scalars['Boolean']['input']>;
   richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   search: InputMaybe<Scalars['String']['input']>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -28718,7 +28773,7 @@ export type BlockCode_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -28817,7 +28872,7 @@ export type BlockCode_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -28916,7 +28971,7 @@ export type BlockCode_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -29015,7 +29070,7 @@ export type BlockCode_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -29114,7 +29169,7 @@ export type BlockCode_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -29213,7 +29268,7 @@ export type BlockCode_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -29312,7 +29367,7 @@ export type BlockCode_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -29411,7 +29466,7 @@ export type BlockCode_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -29510,7 +29565,7 @@ export type BlockCode_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -29759,7 +29814,7 @@ export type BlockColumn_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -29858,7 +29913,7 @@ export type BlockColumn_EntryBuilderContentBlocksArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -29957,7 +30012,7 @@ export type BlockColumn_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -30056,7 +30111,7 @@ export type BlockColumn_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -30155,7 +30210,7 @@ export type BlockColumn_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -30254,7 +30309,7 @@ export type BlockColumn_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -30353,7 +30408,7 @@ export type BlockColumn_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -30452,7 +30507,7 @@ export type BlockColumn_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -30551,7 +30606,7 @@ export type BlockColumn_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -30650,7 +30705,7 @@ export type BlockColumn_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -30901,7 +30956,7 @@ export type BlockImage_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -31000,7 +31055,7 @@ export type BlockImage_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -31099,7 +31154,7 @@ export type BlockImage_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -31198,7 +31253,7 @@ export type BlockImage_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -31354,7 +31409,7 @@ export type BlockImage_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -31453,7 +31508,7 @@ export type BlockImage_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -31552,7 +31607,7 @@ export type BlockImage_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -31651,7 +31706,7 @@ export type BlockImage_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -31750,7 +31805,7 @@ export type BlockImage_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -32002,7 +32057,7 @@ export type BlockImages_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -32101,7 +32156,7 @@ export type BlockImages_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -32200,7 +32255,7 @@ export type BlockImages_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -32299,7 +32354,7 @@ export type BlockImages_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -32460,7 +32515,7 @@ export type BlockImages_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -32559,7 +32614,7 @@ export type BlockImages_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -32658,7 +32713,7 @@ export type BlockImages_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -32757,7 +32812,7 @@ export type BlockImages_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -32856,7 +32911,7 @@ export type BlockImages_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -33105,7 +33160,7 @@ export type BlockLinks_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -33204,7 +33259,7 @@ export type BlockLinks_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -33303,7 +33358,7 @@ export type BlockLinks_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -33402,7 +33457,7 @@ export type BlockLinks_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -33501,7 +33556,7 @@ export type BlockLinks_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -33600,7 +33655,7 @@ export type BlockLinks_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -33699,7 +33754,7 @@ export type BlockLinks_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -33798,7 +33853,7 @@ export type BlockLinks_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -33897,7 +33952,7 @@ export type BlockLinks_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -34148,7 +34203,7 @@ export type BlockQuote_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -34247,7 +34302,7 @@ export type BlockQuote_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -34346,7 +34401,7 @@ export type BlockQuote_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -34445,7 +34500,7 @@ export type BlockQuote_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -34544,7 +34599,7 @@ export type BlockQuote_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -34643,7 +34698,7 @@ export type BlockQuote_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -34742,7 +34797,7 @@ export type BlockQuote_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -34841,7 +34896,7 @@ export type BlockQuote_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -34940,7 +34995,7 @@ export type BlockQuote_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -35192,7 +35247,7 @@ export type BlockSection_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -35296,7 +35351,7 @@ export type BlockSection_EntryBuilderContentBlocksArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -35395,7 +35450,7 @@ export type BlockSection_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -35494,7 +35549,7 @@ export type BlockSection_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -35593,7 +35648,7 @@ export type BlockSection_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -35692,7 +35747,7 @@ export type BlockSection_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -35791,7 +35846,7 @@ export type BlockSection_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -35890,7 +35945,7 @@ export type BlockSection_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -35989,7 +36044,7 @@ export type BlockSection_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -36088,7 +36143,7 @@ export type BlockSection_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -36347,7 +36402,7 @@ export type BlockSpacer_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -36446,7 +36501,7 @@ export type BlockSpacer_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -36545,7 +36600,7 @@ export type BlockSpacer_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -36644,7 +36699,7 @@ export type BlockSpacer_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -36748,7 +36803,7 @@ export type BlockSpacer_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -36847,7 +36902,7 @@ export type BlockSpacer_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -36946,7 +37001,7 @@ export type BlockSpacer_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -37045,7 +37100,7 @@ export type BlockSpacer_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -37144,7 +37199,7 @@ export type BlockSpacer_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -37397,7 +37452,7 @@ export type BlockTextImage_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -37496,7 +37551,7 @@ export type BlockTextImage_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -37595,7 +37650,7 @@ export type BlockTextImage_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -37694,7 +37749,7 @@ export type BlockTextImage_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -37855,7 +37910,7 @@ export type BlockTextImage_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -37954,7 +38009,7 @@ export type BlockTextImage_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -38053,7 +38108,7 @@ export type BlockTextImage_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -38152,7 +38207,7 @@ export type BlockTextImage_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -38251,7 +38306,7 @@ export type BlockTextImage_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -38500,7 +38555,7 @@ export type BlockText_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -38599,7 +38654,7 @@ export type BlockText_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -38698,7 +38753,7 @@ export type BlockText_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -38797,7 +38852,7 @@ export type BlockText_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -38896,7 +38951,7 @@ export type BlockText_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -38995,7 +39050,7 @@ export type BlockText_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -39094,7 +39149,7 @@ export type BlockText_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -39193,7 +39248,7 @@ export type BlockText_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -39292,7 +39347,7 @@ export type BlockText_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -39544,7 +39599,7 @@ export type BlockVideo_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -39643,7 +39698,7 @@ export type BlockVideo_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -39742,7 +39797,7 @@ export type BlockVideo_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -39841,7 +39896,7 @@ export type BlockVideo_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -39940,7 +39995,7 @@ export type BlockVideo_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -40039,7 +40094,7 @@ export type BlockVideo_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -40138,7 +40193,7 @@ export type BlockVideo_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -40237,7 +40292,7 @@ export type BlockVideo_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -40336,7 +40391,7 @@ export type BlockVideo_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -40488,7 +40543,9 @@ export type EntryContentBuilder_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
-  seomatic: Maybe<Scalars['String']['output']>;
+  seo: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -40610,7 +40667,7 @@ export type EntryContentBuilder_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -40709,7 +40766,7 @@ export type EntryContentBuilder_EntryBuilderContentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -40808,7 +40865,7 @@ export type EntryContentBuilder_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -40907,7 +40964,7 @@ export type EntryContentBuilder_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -41006,7 +41063,7 @@ export type EntryContentBuilder_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -41157,7 +41214,7 @@ export type EntryContentBuilder_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -41256,7 +41313,7 @@ export type EntryContentBuilder_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -41355,7 +41412,7 @@ export type EntryContentBuilder_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -41454,7 +41511,7 @@ export type EntryContentBuilder_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -41553,7 +41610,7 @@ export type EntryContentBuilder_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -41574,6 +41631,15 @@ export type EntryContentBuilder_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type EntryContentBuilder_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 export type EntryError_Entry = ElementInterface & EntryInterface & {
@@ -41672,7 +41738,9 @@ export type EntryError_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
-  seomatic: Maybe<Scalars['String']['output']>;
+  seo: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -41794,7 +41862,7 @@ export type EntryError_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -41893,7 +41961,7 @@ export type EntryError_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -41992,7 +42060,7 @@ export type EntryError_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -42091,7 +42159,7 @@ export type EntryError_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -42242,7 +42310,7 @@ export type EntryError_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -42341,7 +42409,7 @@ export type EntryError_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -42440,7 +42508,7 @@ export type EntryError_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -42539,7 +42607,7 @@ export type EntryError_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -42638,7 +42706,7 @@ export type EntryError_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -42659,6 +42727,15 @@ export type EntryError_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type EntryError_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 export type EntryHome_Entry = ElementInterface & EntryInterface & {
@@ -42758,7 +42835,9 @@ export type EntryHome_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
-  seomatic: Maybe<Scalars['String']['output']>;
+  seo: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -42880,7 +42959,7 @@ export type EntryHome_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -42979,7 +43058,7 @@ export type EntryHome_EntryBuilderContentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -43078,7 +43157,7 @@ export type EntryHome_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -43177,7 +43256,7 @@ export type EntryHome_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -43276,7 +43355,7 @@ export type EntryHome_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -43427,7 +43506,7 @@ export type EntryHome_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -43526,7 +43605,7 @@ export type EntryHome_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -43625,7 +43704,7 @@ export type EntryHome_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -43724,7 +43803,7 @@ export type EntryHome_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -43823,7 +43902,7 @@ export type EntryHome_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -43844,6 +43923,15 @@ export type EntryHome_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type EntryHome_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 export type EntryListNews_Entry = ElementInterface & EntryInterface & {
@@ -43942,7 +44030,9 @@ export type EntryListNews_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
-  seomatic: Maybe<Scalars['String']['output']>;
+  seo: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -44064,7 +44154,7 @@ export type EntryListNews_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -44163,7 +44253,7 @@ export type EntryListNews_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -44262,7 +44352,7 @@ export type EntryListNews_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -44361,7 +44451,7 @@ export type EntryListNews_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -44512,7 +44602,7 @@ export type EntryListNews_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -44611,7 +44701,7 @@ export type EntryListNews_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -44710,7 +44800,7 @@ export type EntryListNews_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -44809,7 +44899,7 @@ export type EntryListNews_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -44908,7 +44998,7 @@ export type EntryListNews_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -44929,6 +45019,15 @@ export type EntryListNews_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type EntryListNews_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 export type EntryNewsDetail_Entry = ElementInterface & EntryInterface & {
@@ -45028,7 +45127,9 @@ export type EntryNewsDetail_Entry = ElementInterface & EntryInterface & {
   sectionHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the section that contains the entry. */
   sectionId: Maybe<Scalars['Int']['output']>;
-  seomatic: Maybe<Scalars['String']['output']>;
+  seo: Maybe<Scalars['String']['output']>;
+  /** This query is used to query for SEOmatic meta data. */
+  seomatic: Maybe<SeomaticInterface>;
   /** The handle of the site the element is associated with. */
   siteHandle: Maybe<Scalars['String']['output']>;
   /** The ID of the site the element is associated with. */
@@ -45150,7 +45251,7 @@ export type EntryNewsDetail_EntryAncestorsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -45249,7 +45350,7 @@ export type EntryNewsDetail_EntryBuilderContentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -45348,7 +45449,7 @@ export type EntryNewsDetail_EntryChildrenArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -45447,7 +45548,7 @@ export type EntryNewsDetail_EntryDescendantsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -45546,7 +45647,7 @@ export type EntryNewsDetail_EntryDraftsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -45697,7 +45798,7 @@ export type EntryNewsDetail_EntryLocalizedArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -45796,7 +45897,7 @@ export type EntryNewsDetail_EntryNextArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -45895,7 +45996,7 @@ export type EntryNewsDetail_EntryParentArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -45994,7 +46095,7 @@ export type EntryNewsDetail_EntryPrevArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -46093,7 +46194,7 @@ export type EntryNewsDetail_EntryRevisionsArgs = {
   search: InputMaybe<Scalars['String']['input']>;
   section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seomatic: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   showCaption: InputMaybe<Scalars['Boolean']['input']>;
   site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
@@ -46114,6 +46215,15 @@ export type EntryNewsDetail_EntryRevisionsArgs = {
   videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
   withStructure: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type EntryNewsDetail_EntrySeomaticArgs = {
+  asArray: InputMaybe<Scalars['Boolean']['input']>;
+  environment: InputMaybe<SeomaticEnvironment>;
+  site: InputMaybe<Scalars['String']['input']>;
+  siteId: InputMaybe<Scalars['Int']['input']>;
+  uri: InputMaybe<Scalars['String']['input']>;
 };
 
 export type ErrorPagesSectionEntryUnion = EntryError_Entry;
