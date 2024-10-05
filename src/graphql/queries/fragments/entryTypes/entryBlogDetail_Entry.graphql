@@ -1,0 +1,3 @@
+fragment entryType_blogDetail on entryBlogDetail_Entry {
+    __typename
+}

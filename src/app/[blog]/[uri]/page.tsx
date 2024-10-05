@@ -3,9 +3,9 @@ import { notFound } from "next/navigation";
 import { cookies } from "next/headers";
 import PreviewWrapper from "@/PreviewWrapper";
 import {
-  GetBlogEntryDocument,
-  type GetBlogEntryQuery,
-  type GetBlogEntryQueryVariables,
+  GetEntriesDocument,
+  type GetEntriesQuery,
+  type GetEntriesQueryVariables,
 } from "@/graphql/graphql";
 import { getGqlData } from "@/graphql/graphql-client";
 
@@ -29,32 +29,28 @@ export default async function Page({ params, searchParams }: PageProps) {
       | undefined,
   };
 
-  const { entry } = (await getGqlData<GetBlogEntryQueryVariables>(
-    GetBlogEntryDocument,
+  const { entries } = (await getGqlData<GetEntriesQueryVariables>(
+    GetEntriesDocument,
     {
+      section: ["blog"],
       uri: Object.values(params).join("/"),
+      limit: 1
     },
     {
       token: previewTokens.token,
       xCraftPreview: previewTokens.xCraftPreview,
       xCraftLivePreview: previewTokens.xCraftLivePreview,
     },
-  )) as GetBlogEntryQuery;
+  )) as GetEntriesQuery;
 
-  if (!entry) {
-    return <p>No entry found</p>;
-  }
-
-  // console.log(entry);
-
-  if (!entry) {
+  if (!entries[0]) {
     notFound();
   }
 
   return (
     <PreviewWrapper preview={preview}>
       <Suspense fallback={<div>Loading...</div>}>
-        <h1>{entry.title}</h1>
+        <h1>{entries[0].title}</h1>
       </Suspense>
     </PreviewWrapper>
   );

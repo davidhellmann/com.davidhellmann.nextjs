@@ -1,16 +1,19 @@
 import {
-  GetBlogEntriesDocument,
-  type GetBlogEntriesQuery,
-  type GetBlogEntriesQueryVariables,
+  GetEntriesDocument,
+  type GetEntriesQuery,
+  type GetEntriesQueryVariables,
   type Entry_DataFragment,
 } from "@/graphql/graphql";
 import { getGqlData } from "@/graphql/graphql-client";
 
 export default async function StackBlog() {
-  const { entries } = (await getGqlData<GetBlogEntriesQueryVariables>(
-    GetBlogEntriesDocument,
-    {},
-  )) as GetBlogEntriesQuery;
+  const { entries } = (await getGqlData<GetEntriesQueryVariables>(
+      GetEntriesDocument,
+      {
+        section: ["blog"],
+        limit: 1
+      },
+  )) as GetEntriesQuery;
 
   if (!entries) {
     return <p>No entries found</p>;

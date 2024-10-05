@@ -1,0 +1,13 @@
+query GetEntries(
+    $site: [String] = ["davidhellmann_en"]
+    $section: [String]! = ["blog"],
+    $limit: Int = null,
+    $uri: [String] = null
+) {
+    entries(site: $site, section: $section, limit: $limit, uri: $uri) {
+        ...entry_data
+
+        # Entry Types
+        ...entryType_blogDetail
+    }
+}

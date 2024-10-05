@@ -573,22 +573,15 @@ export type UserRelationCriteriaInput = {
   username: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
-export type GetBlogEntriesQueryVariables = Exact<{
+export type GetEntriesQueryVariables = Exact<{
   site?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>>;
-  section?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>>;
+  section?: Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  uri?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>>;
 }>;
 
 
-export type GetBlogEntriesQuery = { entries: Array<{ id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number }> };
-
-export type GetBlogEntryQueryVariables = Exact<{
-  site?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>>;
-  section?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>>;
-  uri: InputMaybe<Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>>;
-}>;
-
-
-export type GetBlogEntryQuery = { entry: { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } };
+export type GetEntriesQuery = { entries: Array<{ id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { __typename: 'entryBlogDetail_Entry', id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number }> };
 
 type Entry_Data_BlockCode_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
 
@@ -624,6 +617,8 @@ type Entry_Data_EntryListBlog_Entry_Fragment = { id: string, uid: string, title:
 
 export type Entry_DataFragment = Entry_Data_BlockCode_Entry_Fragment | Entry_Data_BlockColumn_Entry_Fragment | Entry_Data_BlockImage_Entry_Fragment | Entry_Data_BlockImages_Entry_Fragment | Entry_Data_BlockLinks_Entry_Fragment | Entry_Data_BlockQuote_Entry_Fragment | Entry_Data_BlockSection_Entry_Fragment | Entry_Data_BlockSpacer_Entry_Fragment | Entry_Data_BlockTextImage_Entry_Fragment | Entry_Data_BlockText_Entry_Fragment | Entry_Data_BlockVideo_Entry_Fragment | Entry_Data_EntryBlogDetail_Entry_Fragment | Entry_Data_EntryContentBuilder_Entry_Fragment | Entry_Data_EntryError_Entry_Fragment | Entry_Data_EntryHome_Entry_Fragment | Entry_Data_EntryListBlog_Entry_Fragment;
 
+export type EntryType_BlogDetailFragment = { __typename: 'entryBlogDetail_Entry' };
+
 export const Entry_DataFragmentDoc = gql`
     fragment entry_data on EntryInterface {
   id
@@ -640,20 +635,20 @@ export const Entry_DataFragmentDoc = gql`
   siteId
 }
     `;
-export const GetBlogEntriesDocument = gql`
-    query GetBlogEntries($site: [String] = ["davidhellmann_en"], $section: [String] = ["blog"]) {
-  entries(site: $site, section: $section) {
+export const EntryType_BlogDetailFragmentDoc = gql`
+    fragment entryType_blogDetail on entryBlogDetail_Entry {
+  __typename
+}
+    `;
+export const GetEntriesDocument = gql`
+    query GetEntries($site: [String] = ["davidhellmann_en"], $section: [String]! = ["blog"], $limit: Int = null, $uri: [String] = null) {
+  entries(site: $site, section: $section, limit: $limit, uri: $uri) {
     ...entry_data
+    ...entryType_blogDetail
   }
 }
-    ${Entry_DataFragmentDoc}`;
-export const GetBlogEntryDocument = gql`
-    query GetBlogEntry($site: [String] = ["davidhellmann_en"], $section: [String] = ["blog"], $uri: [String]) {
-  entry(site: $site, section: $section, uri: $uri) {
-    ...entry_data
-  }
-}
-    ${Entry_DataFragmentDoc}`;
+    ${Entry_DataFragmentDoc}
+${EntryType_BlogDetailFragmentDoc}`;
 
 export type SdkFunctionWrapper = <T>(action: (requestHeaders?:Record<string, string>) => Promise<T>, operationName: string, operationType?: string, variables?: any) => Promise<T>;
 
@@ -662,11 +657,8 @@ const defaultWrapper: SdkFunctionWrapper = (action, _operationName, _operationTy
 
 export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
   return {
-    GetBlogEntries(variables?: GetBlogEntriesQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<GetBlogEntriesQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<GetBlogEntriesQuery>(GetBlogEntriesDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'GetBlogEntries', 'query', variables);
-    },
-    GetBlogEntry(variables?: GetBlogEntryQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<GetBlogEntryQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<GetBlogEntryQuery>(GetBlogEntryDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'GetBlogEntry', 'query', variables);
+    GetEntries(variables?: GetEntriesQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<GetEntriesQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<GetEntriesQuery>(GetEntriesDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'GetEntries', 'query', variables);
     }
   };
 }
