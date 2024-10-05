@@ -10,7 +10,10 @@ import {
 import { getGqlData } from "@/graphql/graphql-client";
 
 interface PageProps {
-  params: { uri: string };
+  params: {
+    blog: "blog";
+    uri: string;
+  };
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
@@ -29,7 +32,7 @@ export default async function Page({ params, searchParams }: PageProps) {
   const { entry } = (await getGqlData<GetBlogEntryQueryVariables>(
     GetBlogEntryDocument,
     {
-      uri: `blog/${params.uri}`,
+      uri: Object.values(params).join("/"),
     },
     {
       token: previewTokens.token,
