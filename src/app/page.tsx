@@ -1,5 +1,5 @@
 import Image from "next/image";
-import StackNews from "@/app/components/stacks/news"
+import StackBlog from "@/components/stacks/blog";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
           priority
         />
 
-        <StackNews />
+        <StackBlog />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}

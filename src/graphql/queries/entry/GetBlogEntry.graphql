@@ -1,0 +1,9 @@
+query GetBlogEntry(
+    $site: [String] = ["davidhellmann_en"]
+    $section: [String] = ["blog"]
+    $uri: [String]
+) {
+    entry(site: $site, section: $section, uri: $uri) {
+        ...entry_data
+    }
+}

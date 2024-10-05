@@ -1,0 +1,8 @@
+query GetBlogEntries(
+    $site: [String] = ["davidhellmann_en"]
+    $section: [String] = ["blog"]
+) {
+    entries(site: $site, section: $section) {
+        ...entry_data
+    }
+}
