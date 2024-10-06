@@ -1,13 +1,14 @@
 fragment entryType_blogDetail on entryBlogDetail_Entry {
-    __typename
+    ...entryType_data
     description
     customTitle
     image {
         ...asset_data
         ...asset_transforms
-        ...asset_custom_fields
+        ...asset_customFields
     }
 
-    # CKE Builder
-    ckeBlog: richTextBlogBuilder
+    contentBuilder {
+        ...matrix_contentBuilder
+    }
 }

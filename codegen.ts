@@ -2,6 +2,9 @@ import type { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
   overwrite: true,
+  hooks: {
+    afterOneFileWrite: ["prettier --write"],
+  },
   schema: [
     {
       [`${process.env.GQL_API_URL}`]: {
@@ -27,7 +30,7 @@ const config: CodegenConfig = {
          */
         dedupeFragments: true,
         withHooks: true,
-        skipTypename: true,
+        skipTypename: false,
         onlyOperationTypes: true,
         maybeValue: "T",
         avoidOptionals: {

@@ -4,10 +4,9 @@ import {
   GetEntriesDocument,
   type GetEntriesQuery,
   type GetEntriesQueryVariables,
-  // type Entry_DataFragment,
-  // type EntryType_BlogDetailFragment,
 } from "@/graphql/graphql";
 import { getGqlData } from "@/graphql/graphql-client";
+import { RichText } from "@/components/text/RichText";
 
 const tvStackBlog = tv({
   slots: {
@@ -40,7 +39,6 @@ export const StackBlog: React.FC<StackBlogProps> = async ({
     return <p>No entries found</p>;
   }
 
-  // type Entry = Entry_DataFragment & EntryType_BlogDetailFragment;
   const { slotBase, slotList, slotListItem } = tvStackBlog({});
 
   return (
@@ -53,12 +51,18 @@ export const StackBlog: React.FC<StackBlogProps> = async ({
         >
           <ul className={slotList({})}>
             {entries?.map((entry) => (
-              <li key={entry.id} className={slotListItem({})}>
-                <a href={entry.url}>
-                  <h2>{entry.title}</h2>
-                  <p>{entry.description}</p>
-                </a>
-              </li>
+              <>
+                {entry?.__typename === "entryBlogDetail_Entry" && (
+                  <li key={entry.id} className={slotListItem({})}>
+                    <a href={entry.url}>
+                      <h2>{entry.title}</h2>
+                      {entry.description && (
+                        <RichText html={entry.description} />
+                      )}
+                    </a>
+                  </li>
+                )}
+              </>
             ))}
           </ul>
         </div>

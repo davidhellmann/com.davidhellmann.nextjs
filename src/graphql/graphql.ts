@@ -1,76 +1,95 @@
-import { GraphQLClient, RequestOptions } from 'graphql-request';
-import gql from 'graphql-tag';
+import { GraphQLClient, RequestOptions } from "graphql-request";
+import gql from "graphql-tag";
 export type Maybe<T> = T;
 export type InputMaybe<T> = T;
-export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
-export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
-export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]: Maybe<T[SubKey]> };
-export type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> = { [_ in K]?: never };
-export type Incremental<T> = T | { [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never };
-type GraphQLClientRequestHeaders = RequestOptions['requestHeaders'];
+export type Exact<T extends { [key: string]: unknown }> = {
+  [K in keyof T]: T[K];
+};
+export type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
+  [SubKey in K]?: Maybe<T[SubKey]>;
+};
+export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
+  [SubKey in K]: Maybe<T[SubKey]>;
+};
+export type MakeEmpty<
+  T extends { [key: string]: unknown },
+  K extends keyof T,
+> = { [_ in K]?: never };
+export type Incremental<T> =
+  | T
+  | {
+      [P in keyof T]?: P extends " $fragmentName" | "__typename" ? T[P] : never;
+    };
+type GraphQLClientRequestHeaders = RequestOptions["requestHeaders"];
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
-  ID: { input: string; output: string; }
-  String: { input: string; output: string; }
-  Boolean: { input: boolean; output: boolean; }
-  Int: { input: number; output: number; }
-  Float: { input: number; output: number; }
-  DateTime: { input: any; output: any; }
-  QueryArgument: { input: any; output: any; }
+  ID: { input: string; output: string };
+  String: { input: string; output: string };
+  Boolean: { input: boolean; output: boolean };
+  Int: { input: number; output: number };
+  Float: { input: number; output: number };
+  DateTime: { input: any; output: any };
+  QueryArgument: { input: any; output: any };
 };
 
 export type AssetRelationCriteriaInput = {
   /** Narrows the query results to only elements that have been archived. */
-  archived: InputMaybe<Scalars['Boolean']['input']>;
-  caption: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  customTitle: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  archived: InputMaybe<Scalars["Boolean"]["input"]>;
+  caption: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  customTitle: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the elements’ creation dates. */
-  dateCreated: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  dateCreated: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the assets’ files’ last-modified dates. */
-  dateModified: InputMaybe<Scalars['String']['input']>;
+  dateModified: InputMaybe<Scalars["String"]["input"]>;
   /** Narrows the query results based on the elements’ last-updated dates. */
-  dateUpdated: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  dateUpdated: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the assets’ filenames. */
-  filename: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  filename: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Causes the query results to be returned in the order specified by the `id` argument. */
-  fixedOrder: InputMaybe<Scalars['Boolean']['input']>;
+  fixedOrder: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the folders the assets belong to, per the folders’ IDs. */
-  folderId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  folderId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on whether the assets have alternative text. */
-  hasAlt: InputMaybe<Scalars['Boolean']['input']>;
+  hasAlt: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the assets’ image heights. */
-  height: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  hyperLink: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  height: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
+  hyperLink: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the elements’ IDs. */
-  id: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  id: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Causes the query results to be returned in reverse order. */
-  inReverse: InputMaybe<Scalars['Boolean']['input']>;
+  inReverse: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Broadens the query results to include assets from any of the subfolders of the folder specified by `folderId`. */
-  includeSubfolders: InputMaybe<Scalars['Boolean']['input']>;
+  includeSubfolders: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the assets’ file kinds. */
-  kind: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  kind: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines which site(s) the elements should be queried in, based on their language. */
-  language: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  language: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Sets the limit for paginated results. */
-  limit: InputMaybe<Scalars['Int']['input']>;
+  limit: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to elements that do not relate to the provided element IDs. */
-  notRelatedTo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  notRelatedTo: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Sets the offset for paginated results. */
-  offset: InputMaybe<Scalars['Int']['input']>;
+  offset: InputMaybe<Scalars["Int"]["input"]>;
   /** Sets the field the returned elements should be ordered by. */
-  orderBy: InputMaybe<Scalars['String']['input']>;
+  orderBy: InputMaybe<Scalars["String"]["input"]>;
   /** Determines which site should be selected when querying multi-site elements. */
-  preferSites: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  preferSites: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on a reference string. */
-  ref: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  ref: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to elements that relate to the provided element IDs. This argument is ignored, if `relatedToAll` is also used. */
-  relatedTo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  relatedTo: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to elements that relate to *all* of the provided element IDs. Using this argument will cause `relatedTo` argument to be ignored. **This argument is deprecated.** `relatedTo: ["and", ...ids]` should be used instead. */
-  relatedToAll: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  relatedToAll: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results to elements that relate to an asset list defined with this argument. */
   relatedToAssets: InputMaybe<Array<InputMaybe<AssetRelationCriteriaInput>>>;
   /** Narrows the query results to elements that relate to a category list defined with this argument. */
-  relatedToCategories: InputMaybe<Array<InputMaybe<CategoryRelationCriteriaInput>>>;
+  relatedToCategories: InputMaybe<
+    Array<InputMaybe<CategoryRelationCriteriaInput>>
+  >;
   /** Narrows the query results to elements that relate to an entry list defined with this argument. */
   relatedToEntries: InputMaybe<Array<InputMaybe<EntryRelationCriteriaInput>>>;
   /** Narrows the query results to elements that relate to a tag list defined with this argument. */
@@ -78,109 +97,117 @@ export type AssetRelationCriteriaInput = {
   /** Narrows the query results to elements that relate to a use list defined with this argument. */
   relatedToUsers: InputMaybe<Array<InputMaybe<UserRelationCriteriaInput>>>;
   /** Narrows the relations based on the field they were created in. */
-  relatedViaField: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  relatedViaField: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the relations based on the site they were created in. */
-  relatedViaSite: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  relatedViaSite: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to only elements that match a search query. */
-  search: InputMaybe<Scalars['String']['input']>;
+  search: InputMaybe<Scalars["String"]["input"]>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
-  site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  site: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
-  siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  siteId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the unique identifier for an element-site relation. */
-  siteSettingsId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  siteSettingsId: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results based on the assets’ file sizes (in bytes). */
-  size: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  size: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ slugs. */
-  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  source: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  slug: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
+  source: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the elements’ statuses. */
-  status: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  status: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ titles. */
-  title: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  title: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to only elements that have been soft-deleted. */
-  trashed: InputMaybe<Scalars['Boolean']['input']>;
+  trashed: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ UIDs. */
-  uid: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  uid: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines whether only elements with unique IDs should be returned by the query. */
-  unique: InputMaybe<Scalars['Boolean']['input']>;
+  unique: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the user the assets were uploaded by, per the user’s ID. */
-  uploader: InputMaybe<Scalars['QueryArgument']['input']>;
+  uploader: InputMaybe<Scalars["QueryArgument"]["input"]>;
   /** Narrows the query results based on the elements’ URIs. */
-  uri: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  uri: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the volumes the assets belong to, per the volumes’ handles. */
-  volume: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  volume: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the volumes the assets belong to, per the volumes’ IDs. */
-  volumeId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  volumeId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the assets’ image widths. */
-  width: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  width: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** A list of transform handles to preload. */
-  withTransforms: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  withTransforms: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
 };
 
 export type CategoryRelationCriteriaInput = {
   /** Narrows the query results to only elements that are up to a certain distance away from the element in its structure specified by `ancestorOf`. */
-  ancestorDist: InputMaybe<Scalars['Int']['input']>;
+  ancestorDist: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to only elements that are ancestors of another element in its structure, provided by its ID. */
-  ancestorOf: InputMaybe<Scalars['Int']['input']>;
+  ancestorOf: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to only elements that have been archived. */
-  archived: InputMaybe<Scalars['Boolean']['input']>;
+  archived: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ creation dates. */
-  dateCreated: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  dateCreated: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ last-updated dates. */
-  dateUpdated: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  dateUpdated: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to only elements that are up to a certain distance away from the element in its structure specified by `descendantOf`. */
-  descendantDist: InputMaybe<Scalars['Int']['input']>;
+  descendantDist: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to only elements that are descendants of another element in its structure provided by its ID. */
-  descendantOf: InputMaybe<Scalars['Int']['input']>;
+  descendantOf: InputMaybe<Scalars["Int"]["input"]>;
   /** Whether to only return categories that the user has permission to edit. */
-  editable: InputMaybe<Scalars['Boolean']['input']>;
+  editable: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Causes the query results to be returned in the order specified by the `id` argument. */
-  fixedOrder: InputMaybe<Scalars['Boolean']['input']>;
+  fixedOrder: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the category groups the categories belong to per the group’s handles. */
-  group: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  group: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the category groups the categories belong to, per the groups’ IDs. */
-  groupId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  groupId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on whether the elements have any descendants in their structure. */
-  hasDescendants: InputMaybe<Scalars['Boolean']['input']>;
+  hasDescendants: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ IDs. */
-  id: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  id: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Causes the query results to be returned in reverse order. */
-  inReverse: InputMaybe<Scalars['Boolean']['input']>;
+  inReverse: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Determines which site(s) the elements should be queried in, based on their language. */
-  language: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  language: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on whether the elements are “leaves” in their structure (element with no descendants). */
-  leaves: InputMaybe<Scalars['Boolean']['input']>;
+  leaves: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ level within the structure. */
-  level: InputMaybe<Scalars['Int']['input']>;
+  level: InputMaybe<Scalars["Int"]["input"]>;
   /** Sets the limit for paginated results. */
-  limit: InputMaybe<Scalars['Int']['input']>;
+  limit: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to only the entry that comes immediately after another element in its structure, provided by its ID. */
-  nextSiblingOf: InputMaybe<Scalars['Int']['input']>;
+  nextSiblingOf: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to elements that do not relate to the provided element IDs. */
-  notRelatedTo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  notRelatedTo: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Sets the offset for paginated results. */
-  offset: InputMaybe<Scalars['Int']['input']>;
+  offset: InputMaybe<Scalars["Int"]["input"]>;
   /** Sets the field the returned elements should be ordered by. */
-  orderBy: InputMaybe<Scalars['String']['input']>;
+  orderBy: InputMaybe<Scalars["String"]["input"]>;
   /** Narrows the query results to only entries that are positioned after another element in its structure, provided by its ID. */
-  positionedAfter: InputMaybe<Scalars['Int']['input']>;
+  positionedAfter: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to only entries that are positioned before another element in its structure, provided by its ID. */
-  positionedBefore: InputMaybe<Scalars['Int']['input']>;
+  positionedBefore: InputMaybe<Scalars["Int"]["input"]>;
   /** Determines which site should be selected when querying multi-site elements. */
-  preferSites: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  preferSites: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to only the entry that comes immediately before another element in its structure, provided by its ID. */
-  prevSiblingOf: InputMaybe<Scalars['Int']['input']>;
+  prevSiblingOf: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results based on a reference string. */
-  ref: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  ref: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to elements that relate to the provided element IDs. This argument is ignored, if `relatedToAll` is also used. */
-  relatedTo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  relatedTo: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to elements that relate to *all* of the provided element IDs. Using this argument will cause `relatedTo` argument to be ignored. **This argument is deprecated.** `relatedTo: ["and", ...ids]` should be used instead. */
-  relatedToAll: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  relatedToAll: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results to elements that relate to an asset list defined with this argument. */
   relatedToAssets: InputMaybe<Array<InputMaybe<AssetRelationCriteriaInput>>>;
   /** Narrows the query results to elements that relate to a category list defined with this argument. */
-  relatedToCategories: InputMaybe<Array<InputMaybe<CategoryRelationCriteriaInput>>>;
+  relatedToCategories: InputMaybe<
+    Array<InputMaybe<CategoryRelationCriteriaInput>>
+  >;
   /** Narrows the query results to elements that relate to an entry list defined with this argument. */
   relatedToEntries: InputMaybe<Array<InputMaybe<EntryRelationCriteriaInput>>>;
   /** Narrows the query results to elements that relate to a tag list defined with this argument. */
@@ -188,146 +215,166 @@ export type CategoryRelationCriteriaInput = {
   /** Narrows the query results to elements that relate to a use list defined with this argument. */
   relatedToUsers: InputMaybe<Array<InputMaybe<UserRelationCriteriaInput>>>;
   /** Narrows the relations based on the field they were created in. */
-  relatedViaField: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  relatedViaField: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the relations based on the site they were created in. */
-  relatedViaSite: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  relatedViaSite: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to only elements that match a search query. */
-  search: InputMaybe<Scalars['String']['input']>;
+  search: InputMaybe<Scalars["String"]["input"]>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
-  site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  site: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
-  siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  siteId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the unique identifier for an element-site relation. */
-  siteSettingsId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  siteSettingsId: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results based on the elements’ slugs. */
-  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  slug: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ statuses. */
-  status: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  status: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines which structure data should be joined into the query. */
-  structureId: InputMaybe<Scalars['Int']['input']>;
+  structureId: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results based on the elements’ titles. */
-  title: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  title: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to only elements that have been soft-deleted. */
-  trashed: InputMaybe<Scalars['Boolean']['input']>;
+  trashed: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ UIDs. */
-  uid: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  uid: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines whether only elements with unique IDs should be returned by the query. */
-  unique: InputMaybe<Scalars['Boolean']['input']>;
+  unique: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ URIs. */
-  uri: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  uri: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Explicitly determines whether the query should join in the structure data. */
-  withStructure: InputMaybe<Scalars['Boolean']['input']>;
+  withStructure: InputMaybe<Scalars["Boolean"]["input"]>;
 };
 
 export type EntryRelationCriteriaInput = {
   /** Narrows the query results to only entries that were posted on or after a certain date. */
-  after: InputMaybe<Scalars['String']['input']>;
+  after: InputMaybe<Scalars["String"]["input"]>;
   /** Narrows the query results to only elements that are up to a certain distance away from the element in its structure specified by `ancestorOf`. */
-  ancestorDist: InputMaybe<Scalars['Int']['input']>;
+  ancestorDist: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to only elements that are ancestors of another element in its structure, provided by its ID. */
-  ancestorOf: InputMaybe<Scalars['Int']['input']>;
+  ancestorOf: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to only elements that have been archived. */
-  archived: InputMaybe<Scalars['Boolean']['input']>;
+  archived: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the user group the entries’ authors belong to. */
-  authorGroup: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  authorGroup: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the user group the entries’ authors belong to, per the groups’ IDs. */
-  authorGroupId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  authorGroupId: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results based on the entries’ authors. */
-  authorId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  autoplay: InputMaybe<Scalars['Boolean']['input']>;
-  backgroundColor: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  authorId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  autoplay: InputMaybe<Scalars["Boolean"]["input"]>;
+  backgroundColor: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results to only entries that were posted before a certain date. */
-  before: InputMaybe<Scalars['String']['input']>;
-  codeSnippet: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  codeSnippetName: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  collapsed: InputMaybe<Scalars['Boolean']['input']>;
-  columnRatio: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  customTitle: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  before: InputMaybe<Scalars["String"]["input"]>;
+  category: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  codeSnippet: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  codeSnippetName: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
+  collapsed: InputMaybe<Scalars["Boolean"]["input"]>;
+  customTitle: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the elements’ creation dates. */
-  dateCreated: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  dateCreated: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ last-updated dates. */
-  dateUpdated: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  dateUpdated: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to only elements that are up to a certain distance away from the element in its structure specified by `descendantOf`. */
-  descendantDist: InputMaybe<Scalars['Int']['input']>;
+  descendantDist: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to only elements that are descendants of another element in its structure provided by its ID. */
-  descendantOf: InputMaybe<Scalars['Int']['input']>;
-  description: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  descendantOf: InputMaybe<Scalars["Int"]["input"]>;
+  description: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** The drafts’ creator ID */
-  draftCreator: InputMaybe<Scalars['Int']['input']>;
+  draftCreator: InputMaybe<Scalars["Int"]["input"]>;
   /** The ID of the draft to return (from the `drafts` table) */
-  draftId: InputMaybe<Scalars['Int']['input']>;
+  draftId: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to only drafts of a given element.  Set to `false` to fetch unpublished drafts. */
-  draftOf: InputMaybe<Scalars['QueryArgument']['input']>;
+  draftOf: InputMaybe<Scalars["QueryArgument"]["input"]>;
   /** Whether draft elements should be returned. */
-  drafts: InputMaybe<Scalars['Boolean']['input']>;
+  drafts: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Whether to only return entries that the user has permission to edit. */
-  editable: InputMaybe<Scalars['Boolean']['input']>;
+  editable: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the entries’ expiry dates. */
-  expiryDate: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  expiryDate: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the field the entries are contained by. */
-  field: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  field: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the field the entries are contained by, per the fields’ IDs. */
-  fieldId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  fieldId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Causes the query results to be returned in the order specified by the `id` argument. */
-  fixedOrder: InputMaybe<Scalars['Boolean']['input']>;
+  fixedOrder: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on whether the elements have any descendants in their structure. */
-  hasDescendants: InputMaybe<Scalars['Boolean']['input']>;
-  height: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  hyperLink: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  hyperLinks: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  hasDescendants: InputMaybe<Scalars["Boolean"]["input"]>;
+  height: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  hyperLink: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  hyperLinks: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the elements’ IDs. */
-  id: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  image: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  imagePosition: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  imageRatio: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  images: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  imagesViewMode: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  id: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  image: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  imagePosition: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
+  imageRatio: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  images: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  imagesViewMode: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Causes the query results to be returned in reverse order. */
-  inReverse: InputMaybe<Scalars['Boolean']['input']>;
+  inReverse: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Determines which site(s) the elements should be queried in, based on their language. */
-  language: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  language: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on whether the elements are “leaves” in their structure (element with no descendants). */
-  leaves: InputMaybe<Scalars['Boolean']['input']>;
+  leaves: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ level within the structure. */
-  level: InputMaybe<Scalars['Int']['input']>;
+  level: InputMaybe<Scalars["Int"]["input"]>;
   /** Sets the limit for paginated results. */
-  limit: InputMaybe<Scalars['Int']['input']>;
-  loop: InputMaybe<Scalars['Boolean']['input']>;
+  limit: InputMaybe<Scalars["Int"]["input"]>;
+  loop: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results to only the entry that comes immediately after another element in its structure, provided by its ID. */
-  nextSiblingOf: InputMaybe<Scalars['Int']['input']>;
+  nextSiblingOf: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to elements that do not relate to the provided element IDs. */
-  notRelatedTo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  notRelatedTo: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Sets the offset for paginated results. */
-  offset: InputMaybe<Scalars['Int']['input']>;
+  offset: InputMaybe<Scalars["Int"]["input"]>;
   /** Sets the field the returned elements should be ordered by. */
-  orderBy: InputMaybe<Scalars['String']['input']>;
+  orderBy: InputMaybe<Scalars["String"]["input"]>;
   /** Narrows the query results based on the owner element of the entries, per the owners’ IDs. */
-  ownerId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  ownerId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to only entries that are positioned after another element in its structure, provided by its ID. */
-  positionedAfter: InputMaybe<Scalars['Int']['input']>;
+  positionedAfter: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to only entries that are positioned before another element in its structure, provided by its ID. */
-  positionedBefore: InputMaybe<Scalars['Int']['input']>;
+  positionedBefore: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results based on the entries’ post dates. */
-  postDate: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  postDate: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines which site should be selected when querying multi-site elements. */
-  preferSites: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  preferSites: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to only the entry that comes immediately before another element in its structure, provided by its ID. */
-  prevSiblingOf: InputMaybe<Scalars['Int']['input']>;
+  prevSiblingOf: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results based on the primary owner element of the entries, per the owners’ IDs. */
-  primaryOwnerId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  primaryOwnerId: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Whether provisional drafts should be returned. */
-  provisionalDrafts: InputMaybe<Scalars['Boolean']['input']>;
-  quote: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  provisionalDrafts: InputMaybe<Scalars["Boolean"]["input"]>;
+  quote: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on a reference string. */
-  ref: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  ref: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to elements that relate to the provided element IDs. This argument is ignored, if `relatedToAll` is also used. */
-  relatedTo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  relatedTo: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to elements that relate to *all* of the provided element IDs. Using this argument will cause `relatedTo` argument to be ignored. **This argument is deprecated.** `relatedTo: ["and", ...ids]` should be used instead. */
-  relatedToAll: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  relatedToAll: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results to elements that relate to an asset list defined with this argument. */
   relatedToAssets: InputMaybe<Array<InputMaybe<AssetRelationCriteriaInput>>>;
   /** Narrows the query results to elements that relate to a category list defined with this argument. */
-  relatedToCategories: InputMaybe<Array<InputMaybe<CategoryRelationCriteriaInput>>>;
+  relatedToCategories: InputMaybe<
+    Array<InputMaybe<CategoryRelationCriteriaInput>>
+  >;
   /** Narrows the query results to elements that relate to an entry list defined with this argument. */
   relatedToEntries: InputMaybe<Array<InputMaybe<EntryRelationCriteriaInput>>>;
   /** Narrows the query results to elements that relate to a tag list defined with this argument. */
@@ -335,122 +382,136 @@ export type EntryRelationCriteriaInput = {
   /** Narrows the query results to elements that relate to a use list defined with this argument. */
   relatedToUsers: InputMaybe<Array<InputMaybe<UserRelationCriteriaInput>>>;
   /** Narrows the relations based on the field they were created in. */
-  relatedViaField: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  relatedViaField: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the relations based on the site they were created in. */
-  relatedViaSite: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  relatedViaSite: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** The revisions’ creator ID */
-  revisionCreator: InputMaybe<Scalars['Int']['input']>;
+  revisionCreator: InputMaybe<Scalars["Int"]["input"]>;
   /** The ID of the revision to return (from the `revisions` table) */
-  revisionId: InputMaybe<Scalars['Int']['input']>;
+  revisionId: InputMaybe<Scalars["Int"]["input"]>;
   /** The source element ID that revisions should be returned for */
-  revisionOf: InputMaybe<Scalars['QueryArgument']['input']>;
+  revisionOf: InputMaybe<Scalars["QueryArgument"]["input"]>;
   /** Whether revision elements should be returned. */
-  revisions: InputMaybe<Scalars['Boolean']['input']>;
-  richText: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  richTextBlogBuilder: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  revisions: InputMaybe<Scalars["Boolean"]["input"]>;
+  richText: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to only elements that match a search query. */
-  search: InputMaybe<Scalars['String']['input']>;
+  search: InputMaybe<Scalars["String"]["input"]>;
   /** Narrows the query results based on the section handles the entries belong to. */
-  section: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  section: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the sections the entries belong to, per the sections’ IDs. */
-  sectionId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  seo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  showCaption: InputMaybe<Scalars['Boolean']['input']>;
+  sectionId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  seo: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  showCaption: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
-  site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  site: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
-  siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  siteId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the unique identifier for an element-site relation. */
-  siteSettingsId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  siteSettingsId: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results based on the elements’ slugs. */
-  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  source: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  spaceBetween: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  spacingYAxis: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  slug: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
+  source: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  spaceBetween: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
+  spacingYAxis: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results based on the elements’ statuses. */
-  status: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  status: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines which structure data should be joined into the query. */
-  structureId: InputMaybe<Scalars['Int']['input']>;
+  structureId: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results based on the elements’ titles. */
-  title: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  title: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
+  topics: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to only elements that have been soft-deleted. */
-  trashed: InputMaybe<Scalars['Boolean']['input']>;
+  trashed: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the entries’ entry type handles. */
-  type: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  type: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the entries’ entry types, per the types’ IDs. */
-  typeId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  typeId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the elements’ UIDs. */
-  uid: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  uid: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines whether only elements with unique IDs should be returned by the query. */
-  unique: InputMaybe<Scalars['Boolean']['input']>;
+  unique: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ URIs. */
-  uri: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  videoId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
-  videoProvider: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  uri: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
+  videoId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
+  videoProvider: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Explicitly determines whether the query should join in the structure data. */
-  withStructure: InputMaybe<Scalars['Boolean']['input']>;
+  withStructure: InputMaybe<Scalars["Boolean"]["input"]>;
 };
 
 /** Optional - The SEOmatic environment that should be used */
 export enum SeomaticEnvironment {
   /** Live production environment, with indexing enabled */
-  Live = 'live',
+  Live = "live",
   /** Local Development environment, with debugging enabled and indexing disabled */
-  Local = 'local',
+  Local = "local",
   /** Staging environment, with indexing disabled */
-  Staging = 'staging'
+  Staging = "staging",
 }
 
 export enum SeomaticFrontendTemplate {
   /** The ads.txt file */
-  Ads = 'ads',
+  Ads = "ads",
   /** The humans.txt file */
-  Humans = 'humans',
+  Humans = "humans",
   /** The robots.txt file */
-  Robots = 'robots',
+  Robots = "robots",
   /** The security.txt file */
-  Security = 'security'
+  Security = "security",
 }
 
 export type TagRelationCriteriaInput = {
   /** Narrows the query results to only elements that have been archived. */
-  archived: InputMaybe<Scalars['Boolean']['input']>;
+  archived: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ creation dates. */
-  dateCreated: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  dateCreated: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ last-updated dates. */
-  dateUpdated: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  dateUpdated: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Causes the query results to be returned in the order specified by the `id` argument. */
-  fixedOrder: InputMaybe<Scalars['Boolean']['input']>;
+  fixedOrder: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the tag groups the tags belong to per the group’s handles. */
-  group: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  group: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the tag groups the tags belong to, per the groups’ IDs. */
-  groupId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  groupId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the elements’ IDs. */
-  id: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  id: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Causes the query results to be returned in reverse order. */
-  inReverse: InputMaybe<Scalars['Boolean']['input']>;
+  inReverse: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Determines which site(s) the elements should be queried in, based on their language. */
-  language: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  language: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Sets the limit for paginated results. */
-  limit: InputMaybe<Scalars['Int']['input']>;
+  limit: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to elements that do not relate to the provided element IDs. */
-  notRelatedTo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  notRelatedTo: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Sets the offset for paginated results. */
-  offset: InputMaybe<Scalars['Int']['input']>;
+  offset: InputMaybe<Scalars["Int"]["input"]>;
   /** Sets the field the returned elements should be ordered by. */
-  orderBy: InputMaybe<Scalars['String']['input']>;
+  orderBy: InputMaybe<Scalars["String"]["input"]>;
   /** Determines which site should be selected when querying multi-site elements. */
-  preferSites: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  preferSites: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on a reference string. */
-  ref: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  ref: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to elements that relate to the provided element IDs. This argument is ignored, if `relatedToAll` is also used. */
-  relatedTo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  relatedTo: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to elements that relate to *all* of the provided element IDs. Using this argument will cause `relatedTo` argument to be ignored. **This argument is deprecated.** `relatedTo: ["and", ...ids]` should be used instead. */
-  relatedToAll: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  relatedToAll: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results to elements that relate to an asset list defined with this argument. */
   relatedToAssets: InputMaybe<Array<InputMaybe<AssetRelationCriteriaInput>>>;
   /** Narrows the query results to elements that relate to a category list defined with this argument. */
-  relatedToCategories: InputMaybe<Array<InputMaybe<CategoryRelationCriteriaInput>>>;
+  relatedToCategories: InputMaybe<
+    Array<InputMaybe<CategoryRelationCriteriaInput>>
+  >;
   /** Narrows the query results to elements that relate to an entry list defined with this argument. */
   relatedToEntries: InputMaybe<Array<InputMaybe<EntryRelationCriteriaInput>>>;
   /** Narrows the query results to elements that relate to a tag list defined with this argument. */
@@ -458,86 +519,94 @@ export type TagRelationCriteriaInput = {
   /** Narrows the query results to elements that relate to a use list defined with this argument. */
   relatedToUsers: InputMaybe<Array<InputMaybe<UserRelationCriteriaInput>>>;
   /** Narrows the relations based on the field they were created in. */
-  relatedViaField: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  relatedViaField: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the relations based on the site they were created in. */
-  relatedViaSite: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  relatedViaSite: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to only elements that match a search query. */
-  search: InputMaybe<Scalars['String']['input']>;
+  search: InputMaybe<Scalars["String"]["input"]>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
-  site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  site: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
-  siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  siteId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the unique identifier for an element-site relation. */
-  siteSettingsId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  siteSettingsId: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results based on the elements’ slugs. */
-  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  slug: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ statuses. */
-  status: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  status: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ titles. */
-  title: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  title: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to only elements that have been soft-deleted. */
-  trashed: InputMaybe<Scalars['Boolean']['input']>;
+  trashed: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ UIDs. */
-  uid: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  uid: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines whether only elements with unique IDs should be returned by the query. */
-  unique: InputMaybe<Scalars['Boolean']['input']>;
+  unique: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ URIs. */
-  uri: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  uri: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
 };
 
 export type UserRelationCriteriaInput = {
   /** Narrows the query results to only elements that have been archived. */
-  archived: InputMaybe<Scalars['Boolean']['input']>;
+  archived: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on whether the users have uploaded any assets. */
-  assetUploaders: InputMaybe<Scalars['Boolean']['input']>;
+  assetUploaders: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on whether the users are listed as the author of any entries. */
-  authors: InputMaybe<Scalars['Boolean']['input']>;
+  authors: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ creation dates. */
-  dateCreated: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  dateCreated: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ last-updated dates. */
-  dateUpdated: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  dateUpdated: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the users’ email addresses. */
-  email: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  email: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the users’ first names. */
-  firstName: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  firstName: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Causes the query results to be returned in the order specified by the `id` argument. */
-  fixedOrder: InputMaybe<Scalars['Boolean']['input']>;
+  fixedOrder: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the users’ full names. */
-  fullName: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  fullName: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the user group the users belong to. */
-  group: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  group: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the user group the users belong to, per the groups’ IDs. */
-  groupId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  groupId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to only users that have (or don’t have) a user photo. */
-  hasPhoto: InputMaybe<Scalars['Boolean']['input']>;
+  hasPhoto: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ IDs. */
-  id: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  id: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Causes the query results to be returned in reverse order. */
-  inReverse: InputMaybe<Scalars['Boolean']['input']>;
+  inReverse: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Determines which site(s) the elements should be queried in, based on their language. */
-  language: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  language: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the users’ last names. */
-  lastName: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  lastName: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Sets the limit for paginated results. */
-  limit: InputMaybe<Scalars['Int']['input']>;
+  limit: InputMaybe<Scalars["Int"]["input"]>;
   /** Narrows the query results to elements that do not relate to the provided element IDs. */
-  notRelatedTo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  notRelatedTo: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Sets the offset for paginated results. */
-  offset: InputMaybe<Scalars['Int']['input']>;
+  offset: InputMaybe<Scalars["Int"]["input"]>;
   /** Sets the field the returned elements should be ordered by. */
-  orderBy: InputMaybe<Scalars['String']['input']>;
+  orderBy: InputMaybe<Scalars["String"]["input"]>;
   /** Determines which site should be selected when querying multi-site elements. */
-  preferSites: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  preferSites: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on a reference string. */
-  ref: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  ref: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to elements that relate to the provided element IDs. This argument is ignored, if `relatedToAll` is also used. */
-  relatedTo: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  relatedTo: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results to elements that relate to *all* of the provided element IDs. Using this argument will cause `relatedTo` argument to be ignored. **This argument is deprecated.** `relatedTo: ["and", ...ids]` should be used instead. */
-  relatedToAll: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  relatedToAll: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results to elements that relate to an asset list defined with this argument. */
   relatedToAssets: InputMaybe<Array<InputMaybe<AssetRelationCriteriaInput>>>;
   /** Narrows the query results to elements that relate to a category list defined with this argument. */
-  relatedToCategories: InputMaybe<Array<InputMaybe<CategoryRelationCriteriaInput>>>;
+  relatedToCategories: InputMaybe<
+    Array<InputMaybe<CategoryRelationCriteriaInput>>
+  >;
   /** Narrows the query results to elements that relate to an entry list defined with this argument. */
   relatedToEntries: InputMaybe<Array<InputMaybe<EntryRelationCriteriaInput>>>;
   /** Narrows the query results to elements that relate to a tag list defined with this argument. */
@@ -545,252 +614,3187 @@ export type UserRelationCriteriaInput = {
   /** Narrows the query results to elements that relate to a use list defined with this argument. */
   relatedToUsers: InputMaybe<Array<InputMaybe<UserRelationCriteriaInput>>>;
   /** Narrows the relations based on the field they were created in. */
-  relatedViaField: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  relatedViaField: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the relations based on the site they were created in. */
-  relatedViaSite: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  relatedViaSite: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to only elements that match a search query. */
-  search: InputMaybe<Scalars['String']['input']>;
+  search: InputMaybe<Scalars["String"]["input"]>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
-  site: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  site: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines which site(s) the elements should be queried in. Defaults to the current (requested) site. */
-  siteId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  siteId: InputMaybe<Array<InputMaybe<Scalars["QueryArgument"]["input"]>>>;
   /** Narrows the query results based on the unique identifier for an element-site relation. */
-  siteSettingsId: InputMaybe<Array<InputMaybe<Scalars['QueryArgument']['input']>>>;
+  siteSettingsId: InputMaybe<
+    Array<InputMaybe<Scalars["QueryArgument"]["input"]>>
+  >;
   /** Narrows the query results based on the elements’ slugs. */
-  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  slug: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ statuses. */
-  status: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  status: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the elements’ titles. */
-  title: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  title: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results to only elements that have been soft-deleted. */
-  trashed: InputMaybe<Scalars['Boolean']['input']>;
+  trashed: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ UIDs. */
-  uid: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  uid: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Determines whether only elements with unique IDs should be returned by the query. */
-  unique: InputMaybe<Scalars['Boolean']['input']>;
+  unique: InputMaybe<Scalars["Boolean"]["input"]>;
   /** Narrows the query results based on the elements’ URIs. */
-  uri: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  uri: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
   /** Narrows the query results based on the users’ usernames. */
-  username: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  username: InputMaybe<Array<InputMaybe<Scalars["String"]["input"]>>>;
 };
 
 export type GetEntriesQueryVariables = Exact<{
-  site?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>>;
-  section?: Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  uri?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>>;
+  site?: InputMaybe<
+    | Array<InputMaybe<Scalars["String"]["input"]>>
+    | InputMaybe<Scalars["String"]["input"]>
+  >;
+  section?:
+    | Array<InputMaybe<Scalars["String"]["input"]>>
+    | InputMaybe<Scalars["String"]["input"]>;
+  limit?: InputMaybe<Scalars["Int"]["input"]>;
+  uri?: InputMaybe<
+    | Array<InputMaybe<Scalars["String"]["input"]>>
+    | InputMaybe<Scalars["String"]["input"]>
+  >;
 }>;
 
+export type GetEntriesQuery = {
+  __typename?: "Query";
+  entries: Array<
+    | {
+        __typename?: "blockCode_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "blockImage_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "blockImages_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "blockLinks_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "blockQuote_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "blockSection_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "blockSpacer_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "blockTextImage_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "blockText_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "blockVideo_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename: "entryBlogDetail_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+        description: string;
+        customTitle: string;
+        image: Array<
+          | {
+              __typename?: "files_Asset";
+              id: string;
+              url: string;
+              width: number;
+              height: number;
+              title: string;
+              alt: string;
+              filename: string;
+              focalPoint: Array<number>;
+              base64BlurHash: string;
+              srcsetLegacy: string;
+              srcset: string;
+            }
+          | {
+              __typename?: "images_Asset";
+              id: string;
+              url: string;
+              width: number;
+              height: number;
+              title: string;
+              alt: string;
+              filename: string;
+              focalPoint: Array<number>;
+              customTitle: string;
+              caption: string;
+              source: string;
+              base64BlurHash: string;
+              srcsetLegacy: string;
+              srcset: string;
+              hyperLink: Array<
+                | {
+                    __typename?: "hyperLink_Asset_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLink_Category_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLink_Custom_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLink_Email_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLink_Embed_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLink_Entry_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLink_Phone_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLink_Site_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLink_Url_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLink_User_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLinks_Asset_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLinks_Category_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLinks_Custom_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLinks_Email_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLinks_Embed_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLinks_Entry_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLinks_Phone_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLinks_Site_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLinks_Url_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+                | {
+                    __typename?: "hyperLinks_User_LinkType";
+                    ariaLabel: string;
+                    classes: string;
+                    isElement: boolean;
+                    isEmpty: boolean;
+                    link: string;
+                    linkText: string;
+                    linkUrl: string;
+                    linkValue: string;
+                    newWindow: boolean;
+                    target: string;
+                    text: string;
+                    title: string;
+                    type: string;
+                    url: string;
+                    urlPrefix: string;
+                    urlSuffix: string;
+                    linkUri: string;
+                  }
+              >;
+            }
+          | {
+              __typename?: "users_Asset";
+              id: string;
+              url: string;
+              width: number;
+              height: number;
+              title: string;
+              alt: string;
+              filename: string;
+              focalPoint: Array<number>;
+              base64BlurHash: string;
+              srcsetLegacy: string;
+              srcset: string;
+            }
+        >;
+        contentBuilder: Array<
+          | {
+              __typename: "blockCode_Entry";
+              codeSnippetName: string;
+              collapsed: boolean;
+              typeHandle: string;
+              codeSnippet: {
+                __typename?: "codeSnippet_CodeData";
+                language: string;
+                value: string;
+              };
+            }
+          | { __typename?: "blockImage_Entry" }
+          | { __typename?: "blockImages_Entry" }
+          | { __typename?: "blockLinks_Entry" }
+          | { __typename?: "blockQuote_Entry" }
+          | { __typename?: "blockSpacer_Entry" }
+          | { __typename?: "blockTextImage_Entry" }
+          | {
+              __typename: "blockText_Entry";
+              richText: string;
+              typeHandle: string;
+            }
+          | { __typename?: "blockVideo_Entry" }
+        >;
+      }
+    | {
+        __typename?: "entryContentBuilder_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "entryError_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "entryHome_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+    | {
+        __typename?: "entryListBlog_Entry";
+        id: string;
+        uid: string;
+        title: string;
+        slug: string;
+        uri: string;
+        url: string;
+        canonicalId: number;
+        language: string;
+        sectionHandle: string;
+        typeHandle: string;
+        siteHandle: string;
+        siteId: number;
+      }
+  >;
+};
 
-export type GetEntriesQuery = { entries: Array<{ id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { __typename: 'entryBlogDetail_Entry', id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number, description: string, customTitle: string, ckeBlog: string, image: Array<{ id: string, url: string, width: number, height: number, title: string, alt: string, filename: string, focalPoint: Array<number>, base64BlurHash: string, srcsetLegacy: string, srcset: string } | { id: string, url: string, width: number, height: number, title: string, alt: string, filename: string, focalPoint: Array<number>, customTitle: string, caption: string, source: string, base64BlurHash: string, srcsetLegacy: string, srcset: string, hyperLink: Array<{ ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string }> } | { id: string, url: string, width: number, height: number, title: string, alt: string, filename: string, focalPoint: Array<number>, base64BlurHash: string, srcsetLegacy: string, srcset: string }> } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number } | { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number }> };
+type Asset_Custom_Fields_Files_Asset_Fragment = { __typename?: "files_Asset" };
 
-type Asset_Data_Files_Asset_Fragment = { id: string, url: string, width: number, height: number, title: string, alt: string, filename: string, focalPoint: Array<number> };
+type Asset_Custom_Fields_Images_Asset_Fragment = {
+  __typename?: "images_Asset";
+  customTitle: string;
+  caption: string;
+  source: string;
+  hyperLink: Array<
+    | {
+        __typename?: "hyperLink_Asset_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Category_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Custom_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Email_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Embed_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Entry_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Phone_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Site_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Url_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_User_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Asset_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Category_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Custom_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Email_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Embed_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Entry_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Phone_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Site_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Url_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_User_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+  >;
+};
 
-type Asset_Data_Images_Asset_Fragment = { id: string, url: string, width: number, height: number, title: string, alt: string, filename: string, focalPoint: Array<number> };
+type Asset_Custom_Fields_Users_Asset_Fragment = { __typename?: "users_Asset" };
 
-type Asset_Data_Users_Asset_Fragment = { id: string, url: string, width: number, height: number, title: string, alt: string, filename: string, focalPoint: Array<number> };
+export type Asset_Custom_FieldsFragment =
+  | Asset_Custom_Fields_Files_Asset_Fragment
+  | Asset_Custom_Fields_Images_Asset_Fragment
+  | Asset_Custom_Fields_Users_Asset_Fragment;
 
-export type Asset_DataFragment = Asset_Data_Files_Asset_Fragment | Asset_Data_Images_Asset_Fragment | Asset_Data_Users_Asset_Fragment;
+type Asset_Data_Files_Asset_Fragment = {
+  __typename?: "files_Asset";
+  id: string;
+  url: string;
+  width: number;
+  height: number;
+  title: string;
+  alt: string;
+  filename: string;
+  focalPoint: Array<number>;
+};
 
-type Asset_Transforms_Files_Asset_Fragment = { base64BlurHash: string, srcsetLegacy: string, srcset: string };
+type Asset_Data_Images_Asset_Fragment = {
+  __typename?: "images_Asset";
+  id: string;
+  url: string;
+  width: number;
+  height: number;
+  title: string;
+  alt: string;
+  filename: string;
+  focalPoint: Array<number>;
+};
 
-type Asset_Transforms_Images_Asset_Fragment = { base64BlurHash: string, srcsetLegacy: string, srcset: string };
+type Asset_Data_Users_Asset_Fragment = {
+  __typename?: "users_Asset";
+  id: string;
+  url: string;
+  width: number;
+  height: number;
+  title: string;
+  alt: string;
+  filename: string;
+  focalPoint: Array<number>;
+};
 
-type Asset_Transforms_Users_Asset_Fragment = { base64BlurHash: string, srcsetLegacy: string, srcset: string };
+export type Asset_DataFragment =
+  | Asset_Data_Files_Asset_Fragment
+  | Asset_Data_Images_Asset_Fragment
+  | Asset_Data_Users_Asset_Fragment;
 
-export type Asset_TransformsFragment = Asset_Transforms_Files_Asset_Fragment | Asset_Transforms_Images_Asset_Fragment | Asset_Transforms_Users_Asset_Fragment;
+type Asset_Transforms_Files_Asset_Fragment = {
+  __typename?: "files_Asset";
+  base64BlurHash: string;
+  srcsetLegacy: string;
+  srcset: string;
+};
 
-type Asset_Custom_Fields_Files_Asset_Fragment = {};
+type Asset_Transforms_Images_Asset_Fragment = {
+  __typename?: "images_Asset";
+  base64BlurHash: string;
+  srcsetLegacy: string;
+  srcset: string;
+};
 
-type Asset_Custom_Fields_Images_Asset_Fragment = { customTitle: string, caption: string, source: string, hyperLink: Array<{ ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string }> };
+type Asset_Transforms_Users_Asset_Fragment = {
+  __typename?: "users_Asset";
+  base64BlurHash: string;
+  srcsetLegacy: string;
+  srcset: string;
+};
 
-type Asset_Custom_Fields_Users_Asset_Fragment = {};
+export type Asset_TransformsFragment =
+  | Asset_Transforms_Files_Asset_Fragment
+  | Asset_Transforms_Images_Asset_Fragment
+  | Asset_Transforms_Users_Asset_Fragment;
 
-export type Asset_Custom_FieldsFragment = Asset_Custom_Fields_Files_Asset_Fragment | Asset_Custom_Fields_Images_Asset_Fragment | Asset_Custom_Fields_Users_Asset_Fragment;
+type Asset_CustomFields_Files_Asset_Fragment = { __typename?: "files_Asset" };
 
-type Entry_Data_BlockCode_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Asset_CustomFields_Images_Asset_Fragment = {
+  __typename?: "images_Asset";
+  customTitle: string;
+  caption: string;
+  source: string;
+  hyperLink: Array<
+    | {
+        __typename?: "hyperLink_Asset_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Category_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Custom_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Email_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Embed_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Entry_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Phone_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Site_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_Url_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLink_User_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Asset_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Category_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Custom_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Email_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Embed_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Entry_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Phone_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Site_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_Url_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+    | {
+        __typename?: "hyperLinks_User_LinkType";
+        ariaLabel: string;
+        classes: string;
+        isElement: boolean;
+        isEmpty: boolean;
+        link: string;
+        linkText: string;
+        linkUrl: string;
+        linkValue: string;
+        newWindow: boolean;
+        target: string;
+        text: string;
+        title: string;
+        type: string;
+        url: string;
+        urlPrefix: string;
+        urlSuffix: string;
+        linkUri: string;
+      }
+  >;
+};
 
-type Entry_Data_BlockColumn_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Asset_CustomFields_Users_Asset_Fragment = { __typename?: "users_Asset" };
 
-type Entry_Data_BlockImage_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+export type Asset_CustomFieldsFragment =
+  | Asset_CustomFields_Files_Asset_Fragment
+  | Asset_CustomFields_Images_Asset_Fragment
+  | Asset_CustomFields_Users_Asset_Fragment;
 
-type Entry_Data_BlockImages_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+export type BlockType_BlockCodeFragment = {
+  __typename: "blockCode_Entry";
+  codeSnippetName: string;
+  collapsed: boolean;
+  typeHandle: string;
+  codeSnippet: {
+    __typename?: "codeSnippet_CodeData";
+    language: string;
+    value: string;
+  };
+};
 
-type Entry_Data_BlockLinks_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+export type BlockType_BlockTextFragment = {
+  __typename: "blockText_Entry";
+  richText: string;
+  typeHandle: string;
+};
 
-type Entry_Data_BlockQuote_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_BlockCode_Entry_Fragment = {
+  __typename?: "blockCode_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Entry_Data_BlockSection_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_BlockImage_Entry_Fragment = {
+  __typename?: "blockImage_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Entry_Data_BlockSpacer_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_BlockImages_Entry_Fragment = {
+  __typename?: "blockImages_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Entry_Data_BlockTextImage_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_BlockLinks_Entry_Fragment = {
+  __typename?: "blockLinks_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Entry_Data_BlockText_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_BlockQuote_Entry_Fragment = {
+  __typename?: "blockQuote_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Entry_Data_BlockVideo_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_BlockSection_Entry_Fragment = {
+  __typename?: "blockSection_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Entry_Data_EntryBlogDetail_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_BlockSpacer_Entry_Fragment = {
+  __typename?: "blockSpacer_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Entry_Data_EntryContentBuilder_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_BlockTextImage_Entry_Fragment = {
+  __typename?: "blockTextImage_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Entry_Data_EntryError_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_BlockText_Entry_Fragment = {
+  __typename?: "blockText_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Entry_Data_EntryHome_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_BlockVideo_Entry_Fragment = {
+  __typename?: "blockVideo_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Entry_Data_EntryListBlog_Entry_Fragment = { id: string, uid: string, title: string, slug: string, uri: string, url: string, canonicalId: number, language: string, sectionHandle: string, typeHandle: string, siteHandle: string, siteId: number };
+type Entry_Data_EntryBlogDetail_Entry_Fragment = {
+  __typename?: "entryBlogDetail_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-export type Entry_DataFragment = Entry_Data_BlockCode_Entry_Fragment | Entry_Data_BlockColumn_Entry_Fragment | Entry_Data_BlockImage_Entry_Fragment | Entry_Data_BlockImages_Entry_Fragment | Entry_Data_BlockLinks_Entry_Fragment | Entry_Data_BlockQuote_Entry_Fragment | Entry_Data_BlockSection_Entry_Fragment | Entry_Data_BlockSpacer_Entry_Fragment | Entry_Data_BlockTextImage_Entry_Fragment | Entry_Data_BlockText_Entry_Fragment | Entry_Data_BlockVideo_Entry_Fragment | Entry_Data_EntryBlogDetail_Entry_Fragment | Entry_Data_EntryContentBuilder_Entry_Fragment | Entry_Data_EntryError_Entry_Fragment | Entry_Data_EntryHome_Entry_Fragment | Entry_Data_EntryListBlog_Entry_Fragment;
+type Entry_Data_EntryContentBuilder_Entry_Fragment = {
+  __typename?: "entryContentBuilder_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-export type EntryType_BlogDetailFragment = { __typename: 'entryBlogDetail_Entry', description: string, customTitle: string, ckeBlog: string, image: Array<{ id: string, url: string, width: number, height: number, title: string, alt: string, filename: string, focalPoint: Array<number>, base64BlurHash: string, srcsetLegacy: string, srcset: string } | { id: string, url: string, width: number, height: number, title: string, alt: string, filename: string, focalPoint: Array<number>, customTitle: string, caption: string, source: string, base64BlurHash: string, srcsetLegacy: string, srcset: string, hyperLink: Array<{ ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string } | { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string }> } | { id: string, url: string, width: number, height: number, title: string, alt: string, filename: string, focalPoint: Array<number>, base64BlurHash: string, srcsetLegacy: string, srcset: string }> };
+type Entry_Data_EntryError_Entry_Fragment = {
+  __typename?: "entryError_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Hyper_Data_HyperLink_Asset_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type Entry_Data_EntryHome_Entry_Fragment = {
+  __typename?: "entryHome_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Hyper_Data_HyperLink_Category_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type Entry_Data_EntryListBlog_Entry_Fragment = {
+  __typename?: "entryListBlog_Entry";
+  id: string;
+  uid: string;
+  title: string;
+  slug: string;
+  uri: string;
+  url: string;
+  canonicalId: number;
+  language: string;
+  sectionHandle: string;
+  typeHandle: string;
+  siteHandle: string;
+  siteId: number;
+};
 
-type Hyper_Data_HyperLink_Custom_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+export type Entry_DataFragment =
+  | Entry_Data_BlockCode_Entry_Fragment
+  | Entry_Data_BlockImage_Entry_Fragment
+  | Entry_Data_BlockImages_Entry_Fragment
+  | Entry_Data_BlockLinks_Entry_Fragment
+  | Entry_Data_BlockQuote_Entry_Fragment
+  | Entry_Data_BlockSection_Entry_Fragment
+  | Entry_Data_BlockSpacer_Entry_Fragment
+  | Entry_Data_BlockTextImage_Entry_Fragment
+  | Entry_Data_BlockText_Entry_Fragment
+  | Entry_Data_BlockVideo_Entry_Fragment
+  | Entry_Data_EntryBlogDetail_Entry_Fragment
+  | Entry_Data_EntryContentBuilder_Entry_Fragment
+  | Entry_Data_EntryError_Entry_Fragment
+  | Entry_Data_EntryHome_Entry_Fragment
+  | Entry_Data_EntryListBlog_Entry_Fragment;
 
-type Hyper_Data_HyperLink_Email_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+export type EntryType_BlogDetailFragment = {
+  __typename: "entryBlogDetail_Entry";
+  description: string;
+  customTitle: string;
+  typeHandle: string;
+  image: Array<
+    | {
+        __typename?: "files_Asset";
+        id: string;
+        url: string;
+        width: number;
+        height: number;
+        title: string;
+        alt: string;
+        filename: string;
+        focalPoint: Array<number>;
+        base64BlurHash: string;
+        srcsetLegacy: string;
+        srcset: string;
+      }
+    | {
+        __typename?: "images_Asset";
+        id: string;
+        url: string;
+        width: number;
+        height: number;
+        title: string;
+        alt: string;
+        filename: string;
+        focalPoint: Array<number>;
+        customTitle: string;
+        caption: string;
+        source: string;
+        base64BlurHash: string;
+        srcsetLegacy: string;
+        srcset: string;
+        hyperLink: Array<
+          | {
+              __typename?: "hyperLink_Asset_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLink_Category_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLink_Custom_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLink_Email_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLink_Embed_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLink_Entry_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLink_Phone_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLink_Site_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLink_Url_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLink_User_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLinks_Asset_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLinks_Category_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLinks_Custom_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLinks_Email_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLinks_Embed_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLinks_Entry_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLinks_Phone_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLinks_Site_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLinks_Url_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+          | {
+              __typename?: "hyperLinks_User_LinkType";
+              ariaLabel: string;
+              classes: string;
+              isElement: boolean;
+              isEmpty: boolean;
+              link: string;
+              linkText: string;
+              linkUrl: string;
+              linkValue: string;
+              newWindow: boolean;
+              target: string;
+              text: string;
+              title: string;
+              type: string;
+              url: string;
+              urlPrefix: string;
+              urlSuffix: string;
+              linkUri: string;
+            }
+        >;
+      }
+    | {
+        __typename?: "users_Asset";
+        id: string;
+        url: string;
+        width: number;
+        height: number;
+        title: string;
+        alt: string;
+        filename: string;
+        focalPoint: Array<number>;
+        base64BlurHash: string;
+        srcsetLegacy: string;
+        srcset: string;
+      }
+  >;
+  contentBuilder: Array<
+    | {
+        __typename: "blockCode_Entry";
+        codeSnippetName: string;
+        collapsed: boolean;
+        typeHandle: string;
+        codeSnippet: {
+          __typename?: "codeSnippet_CodeData";
+          language: string;
+          value: string;
+        };
+      }
+    | { __typename?: "blockImage_Entry" }
+    | { __typename?: "blockImages_Entry" }
+    | { __typename?: "blockLinks_Entry" }
+    | { __typename?: "blockQuote_Entry" }
+    | { __typename?: "blockSpacer_Entry" }
+    | { __typename?: "blockTextImage_Entry" }
+    | { __typename: "blockText_Entry"; richText: string; typeHandle: string }
+    | { __typename?: "blockVideo_Entry" }
+  >;
+};
 
-type Hyper_Data_HyperLink_Embed_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_BlockCode_Entry_Fragment = {
+  __typename: "blockCode_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLink_Entry_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_BlockImage_Entry_Fragment = {
+  __typename: "blockImage_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLink_Phone_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_BlockImages_Entry_Fragment = {
+  __typename: "blockImages_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLink_Site_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_BlockLinks_Entry_Fragment = {
+  __typename: "blockLinks_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLink_Url_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_BlockQuote_Entry_Fragment = {
+  __typename: "blockQuote_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLink_User_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_BlockSection_Entry_Fragment = {
+  __typename: "blockSection_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLinks_Asset_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_BlockSpacer_Entry_Fragment = {
+  __typename: "blockSpacer_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLinks_Category_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_BlockTextImage_Entry_Fragment = {
+  __typename: "blockTextImage_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLinks_Custom_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_BlockText_Entry_Fragment = {
+  __typename: "blockText_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLinks_Email_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_BlockVideo_Entry_Fragment = {
+  __typename: "blockVideo_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLinks_Embed_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_EntryBlogDetail_Entry_Fragment = {
+  __typename: "entryBlogDetail_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLinks_Entry_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_EntryContentBuilder_Entry_Fragment = {
+  __typename: "entryContentBuilder_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLinks_Phone_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_EntryError_Entry_Fragment = {
+  __typename: "entryError_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLinks_Site_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_EntryHome_Entry_Fragment = {
+  __typename: "entryHome_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLinks_Url_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+type EntryType_Data_EntryListBlog_Entry_Fragment = {
+  __typename: "entryListBlog_Entry";
+  typeHandle: string;
+};
 
-type Hyper_Data_HyperLinks_User_LinkType_Fragment = { ariaLabel: string, classes: string, isElement: boolean, isEmpty: boolean, link: string, linkText: string, linkUrl: string, linkValue: string, newWindow: boolean, target: string, text: string, title: string, type: string, url: string, urlPrefix: string, urlSuffix: string, linkUri: string };
+export type EntryType_DataFragment =
+  | EntryType_Data_BlockCode_Entry_Fragment
+  | EntryType_Data_BlockImage_Entry_Fragment
+  | EntryType_Data_BlockImages_Entry_Fragment
+  | EntryType_Data_BlockLinks_Entry_Fragment
+  | EntryType_Data_BlockQuote_Entry_Fragment
+  | EntryType_Data_BlockSection_Entry_Fragment
+  | EntryType_Data_BlockSpacer_Entry_Fragment
+  | EntryType_Data_BlockTextImage_Entry_Fragment
+  | EntryType_Data_BlockText_Entry_Fragment
+  | EntryType_Data_BlockVideo_Entry_Fragment
+  | EntryType_Data_EntryBlogDetail_Entry_Fragment
+  | EntryType_Data_EntryContentBuilder_Entry_Fragment
+  | EntryType_Data_EntryError_Entry_Fragment
+  | EntryType_Data_EntryHome_Entry_Fragment
+  | EntryType_Data_EntryListBlog_Entry_Fragment;
 
-export type Hyper_DataFragment = Hyper_Data_HyperLink_Asset_LinkType_Fragment | Hyper_Data_HyperLink_Category_LinkType_Fragment | Hyper_Data_HyperLink_Custom_LinkType_Fragment | Hyper_Data_HyperLink_Email_LinkType_Fragment | Hyper_Data_HyperLink_Embed_LinkType_Fragment | Hyper_Data_HyperLink_Entry_LinkType_Fragment | Hyper_Data_HyperLink_Phone_LinkType_Fragment | Hyper_Data_HyperLink_Site_LinkType_Fragment | Hyper_Data_HyperLink_Url_LinkType_Fragment | Hyper_Data_HyperLink_User_LinkType_Fragment | Hyper_Data_HyperLinks_Asset_LinkType_Fragment | Hyper_Data_HyperLinks_Category_LinkType_Fragment | Hyper_Data_HyperLinks_Custom_LinkType_Fragment | Hyper_Data_HyperLinks_Email_LinkType_Fragment | Hyper_Data_HyperLinks_Embed_LinkType_Fragment | Hyper_Data_HyperLinks_Entry_LinkType_Fragment | Hyper_Data_HyperLinks_Phone_LinkType_Fragment | Hyper_Data_HyperLinks_Site_LinkType_Fragment | Hyper_Data_HyperLinks_Url_LinkType_Fragment | Hyper_Data_HyperLinks_User_LinkType_Fragment;
+type Matrix_ContentBuilder_BlockCode_Entry_Fragment = {
+  __typename: "blockCode_Entry";
+  codeSnippetName: string;
+  collapsed: boolean;
+  typeHandle: string;
+  codeSnippet: {
+    __typename?: "codeSnippet_CodeData";
+    language: string;
+    value: string;
+  };
+};
 
-export const Entry_DataFragmentDoc = gql`
-    fragment entry_data on EntryInterface {
-  id
-  uid
-  title
-  slug
-  uri
-  url
-  canonicalId
-  language
-  sectionHandle
-  typeHandle
-  siteHandle
-  siteId
-}
-    `;
-export const Asset_DataFragmentDoc = gql`
-    fragment asset_data on AssetInterface {
-  id
-  url
-  width
-  height
-  title
-  alt
-  filename
-  focalPoint
-}
-    `;
-export const Asset_TransformsFragmentDoc = gql`
-    fragment asset_transforms on AssetInterface {
-  base64BlurHash: url @assetToBlurHash
-  srcsetLegacy: url @imagerSrcset(handle: "auto")
-  srcset: url @imagerSrcset(handle: "autoAvif")
-}
-    `;
+type Matrix_ContentBuilder_BlockImage_Entry_Fragment = {
+  __typename?: "blockImage_Entry";
+};
+
+type Matrix_ContentBuilder_BlockImages_Entry_Fragment = {
+  __typename?: "blockImages_Entry";
+};
+
+type Matrix_ContentBuilder_BlockLinks_Entry_Fragment = {
+  __typename?: "blockLinks_Entry";
+};
+
+type Matrix_ContentBuilder_BlockQuote_Entry_Fragment = {
+  __typename?: "blockQuote_Entry";
+};
+
+type Matrix_ContentBuilder_BlockSpacer_Entry_Fragment = {
+  __typename?: "blockSpacer_Entry";
+};
+
+type Matrix_ContentBuilder_BlockTextImage_Entry_Fragment = {
+  __typename?: "blockTextImage_Entry";
+};
+
+type Matrix_ContentBuilder_BlockText_Entry_Fragment = {
+  __typename: "blockText_Entry";
+  richText: string;
+  typeHandle: string;
+};
+
+type Matrix_ContentBuilder_BlockVideo_Entry_Fragment = {
+  __typename?: "blockVideo_Entry";
+};
+
+export type Matrix_ContentBuilderFragment =
+  | Matrix_ContentBuilder_BlockCode_Entry_Fragment
+  | Matrix_ContentBuilder_BlockImage_Entry_Fragment
+  | Matrix_ContentBuilder_BlockImages_Entry_Fragment
+  | Matrix_ContentBuilder_BlockLinks_Entry_Fragment
+  | Matrix_ContentBuilder_BlockQuote_Entry_Fragment
+  | Matrix_ContentBuilder_BlockSpacer_Entry_Fragment
+  | Matrix_ContentBuilder_BlockTextImage_Entry_Fragment
+  | Matrix_ContentBuilder_BlockText_Entry_Fragment
+  | Matrix_ContentBuilder_BlockVideo_Entry_Fragment;
+
+type Hyper_Data_HyperLink_Asset_LinkType_Fragment = {
+  __typename?: "hyperLink_Asset_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLink_Category_LinkType_Fragment = {
+  __typename?: "hyperLink_Category_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLink_Custom_LinkType_Fragment = {
+  __typename?: "hyperLink_Custom_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLink_Email_LinkType_Fragment = {
+  __typename?: "hyperLink_Email_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLink_Embed_LinkType_Fragment = {
+  __typename?: "hyperLink_Embed_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLink_Entry_LinkType_Fragment = {
+  __typename?: "hyperLink_Entry_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLink_Phone_LinkType_Fragment = {
+  __typename?: "hyperLink_Phone_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLink_Site_LinkType_Fragment = {
+  __typename?: "hyperLink_Site_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLink_Url_LinkType_Fragment = {
+  __typename?: "hyperLink_Url_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLink_User_LinkType_Fragment = {
+  __typename?: "hyperLink_User_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLinks_Asset_LinkType_Fragment = {
+  __typename?: "hyperLinks_Asset_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLinks_Category_LinkType_Fragment = {
+  __typename?: "hyperLinks_Category_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLinks_Custom_LinkType_Fragment = {
+  __typename?: "hyperLinks_Custom_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLinks_Email_LinkType_Fragment = {
+  __typename?: "hyperLinks_Email_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLinks_Embed_LinkType_Fragment = {
+  __typename?: "hyperLinks_Embed_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLinks_Entry_LinkType_Fragment = {
+  __typename?: "hyperLinks_Entry_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLinks_Phone_LinkType_Fragment = {
+  __typename?: "hyperLinks_Phone_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLinks_Site_LinkType_Fragment = {
+  __typename?: "hyperLinks_Site_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLinks_Url_LinkType_Fragment = {
+  __typename?: "hyperLinks_Url_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+type Hyper_Data_HyperLinks_User_LinkType_Fragment = {
+  __typename?: "hyperLinks_User_LinkType";
+  ariaLabel: string;
+  classes: string;
+  isElement: boolean;
+  isEmpty: boolean;
+  link: string;
+  linkText: string;
+  linkUrl: string;
+  linkValue: string;
+  newWindow: boolean;
+  target: string;
+  text: string;
+  title: string;
+  type: string;
+  url: string;
+  urlPrefix: string;
+  urlSuffix: string;
+  linkUri: string;
+};
+
+export type Hyper_DataFragment =
+  | Hyper_Data_HyperLink_Asset_LinkType_Fragment
+  | Hyper_Data_HyperLink_Category_LinkType_Fragment
+  | Hyper_Data_HyperLink_Custom_LinkType_Fragment
+  | Hyper_Data_HyperLink_Email_LinkType_Fragment
+  | Hyper_Data_HyperLink_Embed_LinkType_Fragment
+  | Hyper_Data_HyperLink_Entry_LinkType_Fragment
+  | Hyper_Data_HyperLink_Phone_LinkType_Fragment
+  | Hyper_Data_HyperLink_Site_LinkType_Fragment
+  | Hyper_Data_HyperLink_Url_LinkType_Fragment
+  | Hyper_Data_HyperLink_User_LinkType_Fragment
+  | Hyper_Data_HyperLinks_Asset_LinkType_Fragment
+  | Hyper_Data_HyperLinks_Category_LinkType_Fragment
+  | Hyper_Data_HyperLinks_Custom_LinkType_Fragment
+  | Hyper_Data_HyperLinks_Email_LinkType_Fragment
+  | Hyper_Data_HyperLinks_Embed_LinkType_Fragment
+  | Hyper_Data_HyperLinks_Entry_LinkType_Fragment
+  | Hyper_Data_HyperLinks_Phone_LinkType_Fragment
+  | Hyper_Data_HyperLinks_Site_LinkType_Fragment
+  | Hyper_Data_HyperLinks_Url_LinkType_Fragment
+  | Hyper_Data_HyperLinks_User_LinkType_Fragment;
+
 export const Hyper_DataFragmentDoc = gql`
-    fragment hyper_data on HyperLinkInterface {
-  ariaLabel
-  classes
-  isElement
-  isEmpty
-  link
-  linkText
-  linkUrl
-  linkValue
-  newWindow
-  target
-  text
-  title
-  type
-  url
-  urlPrefix
-  urlSuffix
-  linkUri
-}
-    `;
+  fragment hyper_data on HyperLinkInterface {
+    ariaLabel
+    classes
+    isElement
+    isEmpty
+    link
+    linkText
+    linkUrl
+    linkValue
+    newWindow
+    target
+    text
+    title
+    type
+    url
+    urlPrefix
+    urlSuffix
+    linkUri
+  }
+`;
 export const Asset_Custom_FieldsFragmentDoc = gql`
-    fragment asset_custom_fields on AssetInterface {
-  ... on images_Asset {
-    customTitle
-    caption
-    source
-    hyperLink {
-      ...hyper_data
+  fragment asset_custom_fields on AssetInterface {
+    ... on images_Asset {
+      customTitle
+      caption
+      source
+      hyperLink {
+        ...hyper_data
+      }
     }
   }
-}
-    `;
+`;
+export const Entry_DataFragmentDoc = gql`
+  fragment entry_data on EntryInterface {
+    id
+    uid
+    title
+    slug
+    uri
+    url
+    canonicalId
+    language
+    sectionHandle
+    typeHandle
+    siteHandle
+    siteId
+  }
+`;
+export const EntryType_DataFragmentDoc = gql`
+  fragment entryType_data on EntryInterface {
+    __typename
+    typeHandle
+  }
+`;
+export const Asset_DataFragmentDoc = gql`
+  fragment asset_data on AssetInterface {
+    id
+    url
+    width
+    height
+    title
+    alt
+    filename
+    focalPoint
+  }
+`;
+export const Asset_TransformsFragmentDoc = gql`
+  fragment asset_transforms on AssetInterface {
+    base64BlurHash: url @assetToBlurHash
+    srcsetLegacy: url @imagerSrcset(handle: "auto")
+    srcset: url @imagerSrcset(handle: "autoAvif")
+  }
+`;
+export const Asset_CustomFieldsFragmentDoc = gql`
+  fragment asset_customFields on AssetInterface {
+    ... on images_Asset {
+      customTitle
+      caption
+      source
+      hyperLink {
+        ...hyper_data
+      }
+    }
+  }
+`;
+export const BlockType_BlockTextFragmentDoc = gql`
+  fragment blockType_blockText on blockText_Entry {
+    ...entryType_data
+    richText
+  }
+`;
+export const BlockType_BlockCodeFragmentDoc = gql`
+  fragment blockType_blockCode on blockCode_Entry {
+    ...entryType_data
+    codeSnippet {
+      language
+      value
+    }
+    codeSnippetName
+    collapsed
+  }
+`;
+export const Matrix_ContentBuilderFragmentDoc = gql`
+  fragment matrix_contentBuilder on contentBuilder_MatrixField {
+    ...blockType_blockText
+    ...blockType_blockCode
+  }
+`;
 export const EntryType_BlogDetailFragmentDoc = gql`
-    fragment entryType_blogDetail on entryBlogDetail_Entry {
-  __typename
-  description
-  customTitle
-  image {
-    ...asset_data
-    ...asset_transforms
-    ...asset_custom_fields
-  }
-  ckeBlog: richTextBlogBuilder
-}
-    `;
-export const GetEntriesDocument = gql`
-    query GetEntries($site: [String] = ["davidhellmann_en"], $section: [String]! = ["blog"], $limit: Int = null, $uri: [String] = null) {
-  entries(site: $site, section: $section, limit: $limit, uri: $uri) {
-    ...entry_data
-    ...entryType_blogDetail
-  }
-}
-    ${Entry_DataFragmentDoc}
-${EntryType_BlogDetailFragmentDoc}
-${Asset_DataFragmentDoc}
-${Asset_TransformsFragmentDoc}
-${Asset_Custom_FieldsFragmentDoc}
-${Hyper_DataFragmentDoc}`;
-
-export type SdkFunctionWrapper = <T>(action: (requestHeaders?:Record<string, string>) => Promise<T>, operationName: string, operationType?: string, variables?: any) => Promise<T>;
-
-
-const defaultWrapper: SdkFunctionWrapper = (action, _operationName, _operationType, _variables) => action();
-
-export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
-  return {
-    GetEntries(variables?: GetEntriesQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<GetEntriesQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<GetEntriesQuery>(GetEntriesDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'GetEntries', 'query', variables);
+  fragment entryType_blogDetail on entryBlogDetail_Entry {
+    ...entryType_data
+    description
+    customTitle
+    image {
+      ...asset_data
+      ...asset_transforms
+      ...asset_customFields
     }
+    contentBuilder {
+      ...matrix_contentBuilder
+    }
+  }
+`;
+export const GetEntriesDocument = gql`
+  query GetEntries(
+    $site: [String] = ["davidhellmann_en"]
+    $section: [String]! = ["blog"]
+    $limit: Int = null
+    $uri: [String] = null
+  ) {
+    entries(site: $site, section: $section, limit: $limit, uri: $uri) {
+      ...entry_data
+      ...entryType_blogDetail
+    }
+  }
+  ${Entry_DataFragmentDoc}
+  ${EntryType_BlogDetailFragmentDoc}
+  ${EntryType_DataFragmentDoc}
+  ${Asset_DataFragmentDoc}
+  ${Asset_TransformsFragmentDoc}
+  ${Asset_CustomFieldsFragmentDoc}
+  ${Hyper_DataFragmentDoc}
+  ${Matrix_ContentBuilderFragmentDoc}
+  ${BlockType_BlockTextFragmentDoc}
+  ${BlockType_BlockCodeFragmentDoc}
+`;
+
+export type SdkFunctionWrapper = <T>(
+  action: (requestHeaders?: Record<string, string>) => Promise<T>,
+  operationName: string,
+  operationType?: string,
+  variables?: any,
+) => Promise<T>;
+
+const defaultWrapper: SdkFunctionWrapper = (
+  action,
+  _operationName,
+  _operationType,
+  _variables,
+) => action();
+
+export function getSdk(
+  client: GraphQLClient,
+  withWrapper: SdkFunctionWrapper = defaultWrapper,
+) {
+  return {
+    GetEntries(
+      variables?: GetEntriesQueryVariables,
+      requestHeaders?: GraphQLClientRequestHeaders,
+    ): Promise<GetEntriesQuery> {
+      return withWrapper(
+        (wrappedRequestHeaders) =>
+          client.request<GetEntriesQuery>(GetEntriesDocument, variables, {
+            ...requestHeaders,
+            ...wrappedRequestHeaders,
+          }),
+        "GetEntries",
+        "query",
+        variables,
+      );
+    },
   };
 }
 export type Sdk = ReturnType<typeof getSdk>;
