@@ -1,17 +1,17 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-interface PreviewWrapperProps {
+export type PreviewWrapperProps = {
   preview: boolean;
-  children: React.ReactNode;
-}
+  children?: React.ReactNode;
+} & React.HTMLAttributes<HTMLElement>;
 
-export default function PreviewWrapper({
+export const PreviewWrapper: React.FC<PreviewWrapperProps> = ({
   preview,
   children,
-}: PreviewWrapperProps) {
+}: PreviewWrapperProps) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 

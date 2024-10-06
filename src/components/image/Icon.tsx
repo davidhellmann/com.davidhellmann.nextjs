@@ -1,7 +1,7 @@
 import { tv, type VariantProps } from "tailwind-variants";
 import React from "react";
-import { Image, type Asset } from "@/components/marketing/image/Image";
-import { InlineSvg } from "@/components/marketing/image/InlineSvg";
+import { Image, type Asset } from "@/components/image/Image";
+import { InlineSvg } from "@/components/image/InlineSvg";
 
 export type IconVariants = VariantProps<typeof tvIcon>;
 const tvIcon = tv({

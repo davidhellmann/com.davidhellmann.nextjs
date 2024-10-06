@@ -2,10 +2,10 @@ import { tv, type VariantProps } from "tailwind-variants";
 import React from "react";
 import { Link as AriaLink } from "react-aria-components";
 import type { LinkProps as AriaLinkProps } from "react-aria-components";
-import { IconSprite } from "@/components/marketing/ui/IconSprite";
-import { MarketingIcons } from "@/types/marketing-icons";
+import { IconSprite } from "@/components/ui/IconSprite";
+import { Icons } from "@/types/icons";
 
-export type Icon = MarketingIcons | undefined;
+export type Icon = Icons | undefined;
 export type LinkVariants = VariantProps<typeof tvLink>;
 export const tvLink = tv({
   base: "transition font-semibold [&_svg]:shrink-0 text-pretty",

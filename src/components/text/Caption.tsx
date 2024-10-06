@@ -1,8 +1,8 @@
 import { tv, type VariantProps } from "tailwind-variants";
 import React from "react";
-import {Headline} from "@/components/marketing/text/Headline.tsx";
-import {PlainText} from "@/components/marketing/text/PlainText.tsx";
-import {Link} from "@/components/marketing/text/Link.tsx";
+import {Headline} from "@/components/text/Headline";
+import {PlainText} from "@/components/text/PlainText";
+import {Link} from "@/components/text/Link";
 
 const tvCaption= tv({
   slots: {
@@ -63,7 +63,7 @@ export const Caption: React.FC<FigcaptionProps> = ({
           {source && !sourceUrl && <PlainText className={slotSource()} text={source} />}
           {source && sourceUrl && <Link
             variant={"inlineSecondary"}
-            icon={"arrow-right"}
+            icon={"heroicon/arrow-right-outline"}
             text={source}
             href={sourceUrl}
           />}

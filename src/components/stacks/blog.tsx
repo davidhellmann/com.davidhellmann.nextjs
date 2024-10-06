@@ -1,31 +1,59 @@
+import {tv, type VariantProps} from "tailwind-variants";
+import React from "react";
 import {
-  GetEntriesDocument,
-  type GetEntriesQuery,
-  type GetEntriesQueryVariables,
-  type Entry_DataFragment,
+    GetEntriesDocument,
+    type GetEntriesQuery,
+    type GetEntriesQueryVariables,
+    type Entry_DataFragment,
 } from "@/graphql/graphql";
-import { getGqlData } from "@/graphql/graphql-client";
+import {getGqlData} from "@/graphql/graphql-client";
 
-export default async function StackBlog() {
-  const { entries } = (await getGqlData<GetEntriesQueryVariables>(
-      GetEntriesDocument,
-      {
-        section: ["blog"],
-        limit: 1
-      },
-  )) as GetEntriesQuery;
+const tvStackBlog = tv({
+    slots: {
+        slotBase: "",
+        slotList: "",
+        slotListItem: "",
+    },
+});
 
-  if (!entries) {
-    return <p>No entries found</p>;
-  }
+export type StackBlogVariants = VariantProps<typeof tvStackBlog>;
 
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {entries?.map((entry: Entry_DataFragment) => (
-        <div key={entry.id} className="text-white">
-          <a href={entry.url}>{entry.title}</a>
-        </div>
-      ))}
-    </div>
-  );
+export type StackBlogProps = {
+    compName?: string;
+    className?: string;
+} & React.HTMLAttributes<HTMLDivElement> &
+    StackBlogVariants;
+
+export const StackBlog: React.FC<StackBlogProps> = async (
+    {compName = "StackBlog", className}
+) => {
+    const {entries} = (await getGqlData<GetEntriesQueryVariables>(
+        GetEntriesDocument,
+        {
+            section: ["blog"],
+        },
+    )) as GetEntriesQuery;
+
+    if (!entries) {
+        return <p>No entries found</p>;
+    }
+
+    const {slotBase, slotList, slotListItem} = tvStackBlog({});
+
+    return (
+        <>
+            {entries && (
+                <div data-comp={compName} data-testid={compName} className={slotBase({className})}>
+                    <ul className={slotList({})}>
+                        {entries?.map((entry: Entry_DataFragment) => (
+                            <li key={entry.id} className={slotListItem({})}>
+                                <a href={entry.url}>{entry.title}</a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
+        </>
+    );
 }
+

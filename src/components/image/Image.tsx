@@ -3,7 +3,7 @@ import React from "react";
 import {
   Asset_DataFragment,
   Asset_TransformsFragment,
-} from "@/graphql/schema";
+} from "@/graphql/graphql";
 
 export type ObjectFit = "cover" | "contain" | "fill" | "none" | "scale-down";
 export type Asset = Asset_DataFragment & Asset_TransformsFragment & {

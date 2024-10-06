@@ -1,6 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
 import React from "react";
-import {Caption} from "@/components/marketing/text/Caption.tsx";
+import {Caption} from "@/components/text/Caption";
 
 const tvFigure= tv({
   slots: {

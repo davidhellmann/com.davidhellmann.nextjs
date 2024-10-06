@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
-import { cookies } from "next/headers";
-import PreviewWrapper from "@/PreviewWrapper";
+import { getPreviewData } from "@/lib/preview";
+import { PreviewWrapper } from "@/components/wrapper/PreviewWrapper";
 import {
   GetEntriesDocument,
   type GetEntriesQuery,
@@ -9,25 +9,17 @@ import {
 } from "@/graphql/graphql";
 import { getGqlData } from "@/graphql/graphql-client";
 
-interface PageProps {
+interface BlogDetailProps {
   params: {
     blog: "blog";
-    uri: string;
+    slug: string;
   };
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default async function Page({ params, searchParams }: PageProps) {
-  const previewData = cookies().get("next-preview-data");
-  const preview = previewData ? JSON.parse(previewData.value).isPreview : false;
 
-  const previewTokens = {
-    token: searchParams.token as string | undefined,
-    xCraftPreview: searchParams["x-craft-preview"] as string | undefined,
-    xCraftLivePreview: searchParams["x-craft-live-preview"] as
-      | string
-      | undefined,
-  };
+const BlogDetail = async ({ params, searchParams }: BlogDetailProps) => {
+  const { preview, previewTokens } = getPreviewData(searchParams);
 
   const { entries } = (await getGqlData<GetEntriesQueryVariables>(
     GetEntriesDocument,
@@ -47,6 +39,8 @@ export default async function Page({ params, searchParams }: PageProps) {
     notFound();
   }
 
+  console.log(entries[0])
+
   return (
     <PreviewWrapper preview={preview}>
       <Suspense fallback={<div>Loading...</div>}>
@@ -56,11 +50,20 @@ export default async function Page({ params, searchParams }: PageProps) {
   );
 }
 
-// export async function generateStaticParams() {
-//   // Implement this function to generate static paths at build time
-//   // This is similar to getStaticPaths in the Pages Router
-//   const entries = await getAllEntries();
-//   return entries.map((entry) => ({
-//     uri: entry.uri,
-//   }));
-// }
+export default BlogDetail;
+
+export async function generateStaticParams() {
+  // Implement this function to generate static paths at build time
+  // This is similar to getStaticPaths in the Pages Router
+  const { entries } = (await getGqlData<GetEntriesQueryVariables>(
+      GetEntriesDocument,
+      {
+        section: ["blog"]
+      },
+  )) as GetEntriesQuery;
+  return entries.map((entry) => ({
+    blog: 'blog',
+    uri: entry.slug,
+  }));
+}
+

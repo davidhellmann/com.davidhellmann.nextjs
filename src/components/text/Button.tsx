@@ -2,11 +2,11 @@ import { type VariantProps } from "tailwind-variants";
 import React from "react";
 import { Button as AriaButton } from "react-aria-components";
 import type { ButtonProps as AriaButtonProps } from "react-aria-components";
-import { IconSprite } from "@/components/marketing/ui/IconSprite";
-import { tvLink } from "@/components/marketing/text/Link";
-import { MarketingIcons } from "@/types/marketing-icons";
+import { IconSprite } from "@/components/ui/IconSprite";
+import { tvLink } from "@/components/text/Link";
+import { Icons } from "@/types/icons";
 
-type Icon = MarketingIcons | undefined;
+type Icon = Icons | undefined;
 
 export type ButtonProps = {
   compName?: string;

@@ -1,8 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
 import React from "react";
-import type { MarketingIcons } from "@/types/marketing-icons";
-
-type context = "marketing";
+import type { Icons } from "@/types/icons";
 
 const tvIconSprite= tv({
   base: "inline-flex",
@@ -21,8 +19,7 @@ const tvIconSprite= tv({
 
 export type IconSpriteProps = {
   compName?: string;
-  icon?: MarketingIcons;
-  context?: context;
+  icon?: Icons;
   className?: string;
 } & React.HTMLAttributes<HTMLOrSVGElement> &
   VariantProps<typeof tvIconSprite>;
@@ -30,7 +27,6 @@ export type IconSpriteProps = {
 export const IconSprite: React.FC<IconSpriteProps> = ({
   compName = "IconSprite",
   icon: iconName,
-  context = "marketing",
   size= 20,
   className,
 }) => {
@@ -44,7 +40,7 @@ export const IconSprite: React.FC<IconSpriteProps> = ({
           className={tvIconSprite({size, className})}
           aria-hidden="true"
         >
-          <use xlinkHref={`/icons/sprites/${context}/sprite.svg#${iconName}`}></use>
+          <use xlinkHref={`/icons/sprite.svg#${iconName}`} />
         </svg>
       )}
     </>

@@ -1,5 +1,5 @@
 import { GraphQLClient } from "graphql-request";
-import { DocumentNode } from "graphql";
+import type { RequestDocument } from "graphql-request";
 
 type IHeaders = {
   Authorization: string;
@@ -45,9 +45,9 @@ export const cmsClient = (tokens: IPreviewTokens = {}) => {
 };
 
 export const getGqlData = async <T>(
-  query: DocumentNode,
-  variables: T,
-  tokens?: IPreviewTokens,
+    query: RequestDocument,
+    variables: T,
+    tokens?: IPreviewTokens,
 ) => {
   const client = cmsClient(tokens ?? {});
 

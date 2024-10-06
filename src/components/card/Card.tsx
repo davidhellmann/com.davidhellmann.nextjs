@@ -1,11 +1,11 @@
 import { tv, type VariantProps } from "tailwind-variants";
 import React from "react";
-import { Headline } from "@/components/marketing/text/Headline";
-import { PlainText } from "@/components/marketing/text/PlainText";
-import { Eyebrow, type EyebrowVariants } from "@/components/marketing/text/Eyebrow";
-import { Image, type Asset } from "@/components/marketing/image/Image";
-import { Icon, type IconVariants } from "@/components/marketing/image/Icon";
-import { Link, type LinkVariants, type Icon as LinkIcon } from "@/components/marketing/text/Link";
+import { Headline } from "@/components/text/Headline";
+import { PlainText } from "@/components/text/PlainText";
+import { Eyebrow, type EyebrowVariants } from "@/components/text/Eyebrow";
+import { Image, type Asset } from "@/components/image/Image";
+import { Icon, type IconVariants } from "@/components/image/Icon";
+import { Link, type LinkVariants, type Icon as LinkIcon } from "@/components/text/Link";
 
 const tvCardText = tv({
   slots: {
