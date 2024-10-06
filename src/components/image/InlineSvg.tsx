@@ -1,7 +1,6 @@
-import {tv, type VariantProps} from "tailwind-variants";
+import { tv, type VariantProps } from "tailwind-variants";
 import React from "react";
 import parse from "html-react-parser";
-
 
 const tvInlineSvg = tv({
   base: "w-full h-auto",
@@ -36,10 +35,10 @@ export const InlineSvg: React.FC<InlineSvgProps> = ({
             }
             domNode.attribs["data-comp"] = compName;
             domNode.attribs["data-testid"] = compName;
-            domNode.attribs.class = tvInlineSvg({className});
+            domNode.attribs.class = tvInlineSvg({ className });
           }
           return domNode;
-        }
+        },
       })}
     </>
   );

@@ -35,8 +35,14 @@ export const Icon: React.FC<IconProps> = ({
   return (
     <>
       {(image || inlineSvg) && (
-        <div data-comp={compName} data-testid={compName} className={tvIcon({ size, className })}>
-          {image && <Image image={image} ratio="square" noscript={false} lazy={false} />}
+        <div
+          data-comp={compName}
+          data-testid={compName}
+          className={tvIcon({ size, className })}
+        >
+          {image && (
+            <Image image={image} ratio="square" noscript={false} lazy={false} />
+          )}
 
           {inlineSvg && <InlineSvg svg={inlineSvg} />}
         </div>

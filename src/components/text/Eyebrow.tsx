@@ -23,13 +23,20 @@ export type EyebrowProps = {
 } & React.HTMLAttributes<HTMLDivElement> &
   EyebrowVariants;
 
-export const Eyebrow: React.FC<EyebrowProps> = (
-    { compName = "Eyebrow", text, color = "primary", className }
-) => {
+export const Eyebrow: React.FC<EyebrowProps> = ({
+  compName = "Eyebrow",
+  text,
+  color = "primary",
+  className,
+}) => {
   return (
     <>
       {text && (
-        <div data-comp={compName} data-testid={compName} className={tvEyebrow({ color, className })}>
+        <div
+          data-comp={compName}
+          data-testid={compName}
+          className={tvEyebrow({ color, className })}
+        >
           {text}
         </div>
       )}

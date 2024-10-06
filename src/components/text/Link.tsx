@@ -33,8 +33,10 @@ export const tvLink = tv({
       `,
       linkPrimary: "text-primary-500",
       linkSecondary: "text-black",
-      inlinePimary: "text-primary-500 hover:text-black inline-flex items-center",
-      inlineSecondary: "text-black hover:text-primary-500 inline-flex items-center",
+      inlinePimary:
+        "text-primary-500 hover:text-black inline-flex items-center",
+      inlineSecondary:
+        "text-black hover:text-primary-500 inline-flex items-center",
     },
     iconPosition: {
       left: "[&_svg]:-ml-2 flex-row-reverse",
@@ -153,7 +155,12 @@ export const Link: React.FC<LinkProps> = ({
         href={fakeLink ? "" : href}
         data-comp={compName}
         data-testid={compName}
-        className={tvLink({ variant, iconPosition: _iconPosition, gapSize, className })}
+        className={tvLink({
+          variant,
+          iconPosition: _iconPosition,
+          gapSize,
+          className,
+        })}
         {...props}
       >
         {needsSplit ? (

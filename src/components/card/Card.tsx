@@ -5,7 +5,11 @@ import { PlainText } from "@/components/text/PlainText";
 import { Eyebrow, type EyebrowVariants } from "@/components/text/Eyebrow";
 import { Image, type Asset } from "@/components/image/Image";
 import { Icon, type IconVariants } from "@/components/image/Icon";
-import { Link, type LinkVariants, type Icon as LinkIcon } from "@/components/text/Link";
+import {
+  Link,
+  type LinkVariants,
+  type Icon as LinkIcon,
+} from "@/components/text/Link";
 
 const tvCardText = tv({
   slots: {
@@ -91,7 +95,12 @@ export const Card: React.FC<CardTextProps> = ({
   layout = "vertical",
   className = "",
 }) => {
-  const { slotCard, slotImage, slotContent, slotLink, slotIcon } = tvCardText({ layout, background, iconColor, align });
+  const { slotCard, slotImage, slotContent, slotLink, slotIcon } = tvCardText({
+    layout,
+    background,
+    iconColor,
+    align,
+  });
   const TagName = inlineLink ? "article" : "a";
   className = inlineLink ? className : className?.concat(" group");
 
@@ -113,17 +122,27 @@ export const Card: React.FC<CardTextProps> = ({
           className={`${slotCard({ layout, className })}`}
           href={!inlineLink ? linkHref : undefined}
         >
-          {image && <Image className={slotImage()} image={image} ratio="landscape" />}
+          {image && (
+            <Image className={slotImage()} image={image} ratio="landscape" />
+          )}
 
           <div className={`${slotContent()} ${padding}`}>
-            {icon && <Icon className={slotIcon()} inlineSvg={icon} {...iconVariants} />}
+            {icon && (
+              <Icon className={slotIcon()} inlineSvg={icon} {...iconVariants} />
+            )}
             {eyebrow && <Eyebrow text={eyebrow} {...eyebrowVariants} />}
             {headline && <Headline text={headline} preset={"h4"} />}
             {text && <PlainText text={text} />}
 
             {linkHref && linkText && (
               <div className={slotLink()}>
-                <Link href={linkHref} text={linkText} {...linkVariants} icon={linkIcon} fakeLink={!inlineLink} />
+                <Link
+                  href={linkHref}
+                  text={linkText}
+                  {...linkVariants}
+                  icon={linkIcon}
+                  fakeLink={!inlineLink}
+                />
               </div>
             )}
           </div>

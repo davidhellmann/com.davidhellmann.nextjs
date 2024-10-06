@@ -54,7 +54,7 @@ const tvFlex = tv({
       16: "gap-y-16",
       32: "gap-y-32",
     },
-  }
+  },
 });
 
 export type FlexProps = {
@@ -67,7 +67,7 @@ export const Flex: React.FC<FlexProps> = ({
   compName = "Flex",
   className,
   columns = 3,
-  wrap= true,
+  wrap = true,
   justifyContent = "start",
   alignItems = "start",
   gap = 8,
@@ -86,7 +86,16 @@ export const Flex: React.FC<FlexProps> = ({
         <div
           data-comp={compName}
           data-testid={compName}
-          className={tvFlex({ columns, wrap, justifyContent, alignItems, gap, gapX, gapY, className })}
+          className={tvFlex({
+            columns,
+            wrap,
+            justifyContent,
+            alignItems,
+            gap,
+            gapX,
+            gapY,
+            className,
+          })}
         >
           {children}
         </div>

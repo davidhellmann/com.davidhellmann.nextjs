@@ -1,9 +1,9 @@
-import {tv, type VariantProps} from "tailwind-variants";
+import { tv, type VariantProps } from "tailwind-variants";
 import React from "react";
-import {Fragment} from "react";
+import { Fragment } from "react";
 
 const tvPlainText = tv({
-  base: ""
+  base: "",
 });
 
 export type PlainTextProps = {
@@ -18,17 +18,21 @@ export const PlainText: React.FC<PlainTextProps> = ({
   className,
   text,
 }) => {
-
   return (
     <>
       {text && (
         <p
           data-comp={compName}
           data-testid={compName}
-          className={tvPlainText({className})}
+          className={tvPlainText({ className })}
         >
           {text.split("\n").map((item, key) => {
-            return <Fragment key={key}>{item}<br/></Fragment>;
+            return (
+              <Fragment key={key}>
+                {item}
+                <br />
+              </Fragment>
+            );
           })}
         </p>
       )}

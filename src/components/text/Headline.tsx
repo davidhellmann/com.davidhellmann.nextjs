@@ -30,7 +30,7 @@ const tvHeadline = tv({
       semibold: "font-semibold",
       extrabold: "font-extrabold",
     },
-  }
+  },
 });
 
 type HeadlineTags = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
@@ -47,7 +47,7 @@ export const Headline: React.FC<HeadlineProps> = ({
   compName = "Headline",
   tag: TagName = "h2",
   text,
-  preset= "h2",
+  preset = "h2",
   size,
   weight,
   className,

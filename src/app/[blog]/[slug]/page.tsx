@@ -17,7 +17,6 @@ interface BlogDetailProps {
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
-
 const BlogDetail = async ({ params, searchParams }: BlogDetailProps) => {
   const { preview, previewTokens } = getPreviewData(searchParams);
 
@@ -26,7 +25,7 @@ const BlogDetail = async ({ params, searchParams }: BlogDetailProps) => {
     {
       section: ["blog"],
       uri: Object.values(params).join("/"),
-      limit: 1
+      limit: 1,
     },
     {
       token: previewTokens.token,
@@ -39,7 +38,7 @@ const BlogDetail = async ({ params, searchParams }: BlogDetailProps) => {
     notFound();
   }
 
-  console.log(entries[0])
+  console.log(entries[0]);
 
   return (
     <PreviewWrapper preview={preview}>
@@ -48,7 +47,7 @@ const BlogDetail = async ({ params, searchParams }: BlogDetailProps) => {
       </Suspense>
     </PreviewWrapper>
   );
-}
+};
 
 export default BlogDetail;
 
@@ -56,14 +55,13 @@ export async function generateStaticParams() {
   // Implement this function to generate static paths at build time
   // This is similar to getStaticPaths in the Pages Router
   const { entries } = (await getGqlData<GetEntriesQueryVariables>(
-      GetEntriesDocument,
-      {
-        section: ["blog"]
-      },
+    GetEntriesDocument,
+    {
+      section: ["blog"],
+    },
   )) as GetEntriesQuery;
   return entries.map((entry) => ({
-    blog: 'blog',
+    blog: "blog",
     uri: entry.slug,
   }));
 }
-

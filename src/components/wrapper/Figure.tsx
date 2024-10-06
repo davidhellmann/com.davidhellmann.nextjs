@@ -1,10 +1,11 @@
 import { tv, type VariantProps } from "tailwind-variants";
 import React from "react";
-import {Caption} from "@/components/text/Caption";
+import { Caption } from "@/components/text/Caption";
 
-const tvFigure= tv({
+const tvFigure = tv({
   slots: {
-    figure: "flex flex-col gap-2 bg-neutral-200 px-4 pt-4 pb-3 rounded-md overflow-hidden",
+    figure:
+      "flex flex-col gap-2 bg-neutral-200 px-4 pt-4 pb-3 rounded-md overflow-hidden",
     figcaption: "",
   },
 });
@@ -25,7 +26,7 @@ export const Figure: React.FC<FigureProps> = ({
   headline,
   text,
   source,
-  sourceUrl ,
+  sourceUrl,
   children,
 }) => {
   const { figure, figcaption } = tvFigure({ className });
@@ -35,16 +36,18 @@ export const Figure: React.FC<FigureProps> = ({
       <figure
         data-comp={compName}
         data-testid={compName}
-        className={figure({className})}
+        className={figure({ className })}
       >
         {children}
-        {text && <Caption
-          text={text}
-          headline={headline}
-          source={source}
-          sourceUrl={sourceUrl}
-          className={figcaption()}
-        />}
+        {text && (
+          <Caption
+            text={text}
+            headline={headline}
+            source={source}
+            sourceUrl={sourceUrl}
+            className={figcaption()}
+          />
+        )}
       </figure>
     </>
   );

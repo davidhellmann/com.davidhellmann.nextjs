@@ -3,49 +3,48 @@ import { notFound } from "next/navigation";
 import { getPreviewData } from "@/lib/preview";
 import { PreviewWrapper } from "@/components/wrapper/PreviewWrapper";
 import {
-    GetEntriesDocument,
-    type GetEntriesQuery,
-    type GetEntriesQueryVariables,
+  GetEntriesDocument,
+  type GetEntriesQuery,
+  type GetEntriesQueryVariables,
 } from "@/graphql/graphql";
 import { getGqlData } from "@/graphql/graphql-client";
 
 interface PageProps {
-    params: {
-        uri: string;
-    };
-    searchParams: { [key: string]: string | string[] | undefined };
+  params: {
+    uri: string;
+  };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
-
 
 const Page = async ({ params, searchParams }: PageProps) => {
-    const { preview, previewTokens } = getPreviewData(searchParams);
+  const { preview, previewTokens } = getPreviewData(searchParams);
 
-    const { entries } = (await getGqlData<GetEntriesQueryVariables>(
-        GetEntriesDocument,
-        {
-            section: ["pages"],
-            uri: params.uri,
-            limit: 1
-        },
-        {
-            token: previewTokens.token,
-            xCraftPreview: previewTokens.xCraftPreview,
-            xCraftLivePreview: previewTokens.xCraftLivePreview,
-        },
-    )) as GetEntriesQuery;
+  const { entries } = (await getGqlData<GetEntriesQueryVariables>(
+    GetEntriesDocument,
+    {
+      section: ["pages"],
+      uri: params.uri,
+      limit: 1,
+    },
+    {
+      token: previewTokens.token,
+      xCraftPreview: previewTokens.xCraftPreview,
+      xCraftLivePreview: previewTokens.xCraftLivePreview,
+    },
+  )) as GetEntriesQuery;
 
-    if (!entries[0]) {
-        notFound();
-    }
+  if (!entries[0]) {
+    notFound();
+  }
 
-    return (
-        <PreviewWrapper preview={preview}>
-            <Suspense fallback={<div>Loading...</div>}>
-                <h1>{entries[0].title}</h1>
-            </Suspense>
-        </PreviewWrapper>
-    );
-}
+  return (
+    <PreviewWrapper preview={preview}>
+      <Suspense fallback={<div>Loading...</div>}>
+        <h1>{entries[0].title}</h1>
+      </Suspense>
+    </PreviewWrapper>
+  );
+};
 
 export default Page;
 

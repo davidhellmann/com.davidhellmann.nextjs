@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {StackBlog} from "@/components/stacks/blog";
+import { StackBlog } from "@/components/stacks/blog";
 
 export default function Home() {
   return (

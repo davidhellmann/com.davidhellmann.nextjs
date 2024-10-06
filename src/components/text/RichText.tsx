@@ -1,7 +1,7 @@
 import { tv, type VariantProps } from "tailwind-variants";
 import React from "react";
 
-const tvRichText= tv({
+const tvRichText = tv({
   base: "stack-4",
 });
 
@@ -17,15 +17,14 @@ export const RichText: React.FC<RichTextProps> = ({
   className,
   html,
 }) => {
-
   return (
     <>
       {html && (
         <div
           data-comp={compName}
           data-testid={compName}
-          className={tvRichText({className})}
-          dangerouslySetInnerHTML={{__html: html}}
+          className={tvRichText({ className })}
+          dangerouslySetInnerHTML={{ __html: html }}
         />
       )}
     </>

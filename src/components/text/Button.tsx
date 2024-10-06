@@ -14,7 +14,7 @@ export type ButtonProps = {
   icon?: Icon;
   className?: string;
   children?: React.ReactNode;
-} & (React.HTMLAttributes<HTMLButtonElement>) &
+} & React.HTMLAttributes<HTMLButtonElement> &
   VariantProps<typeof tvLink> &
   AriaButtonProps;
 
@@ -24,7 +24,7 @@ export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   gapSize = 2,
   icon = null,
-  iconPosition= "right",
+  iconPosition = "right",
   className,
   ...props
 }) => {
@@ -39,7 +39,12 @@ export const Button: React.FC<ButtonProps> = ({
       <AriaButton
         data-comp={compName}
         data-testid={compName}
-        className={tvLink({ variant, iconPosition: _iconPosition, gapSize, className })}
+        className={tvLink({
+          variant,
+          iconPosition: _iconPosition,
+          gapSize,
+          className,
+        })}
         {...props}
       >
         {text}

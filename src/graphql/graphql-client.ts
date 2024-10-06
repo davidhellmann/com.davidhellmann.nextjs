@@ -45,9 +45,9 @@ export const cmsClient = (tokens: IPreviewTokens = {}) => {
 };
 
 export const getGqlData = async <T>(
-    query: RequestDocument,
-    variables: T,
-    tokens?: IPreviewTokens,
+  query: RequestDocument,
+  variables: T,
+  tokens?: IPreviewTokens,
 ) => {
   const client = cmsClient(tokens ?? {});
 

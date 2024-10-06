@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom";
 
 export function PreloadResources() {
-    ReactDOM.preload("/icons/sprite.svg", {
-        as: "image",
-    })
+  ReactDOM.preload("/icons/sprite.svg", {
+    as: "image",
+  });
 
-    return null
+  return null;
 }

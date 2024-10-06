@@ -49,4 +49,4 @@ export const PreviewWrapper: React.FC<PreviewWrapperProps> = ({
       </div>
     </div>
   );
-}
+};

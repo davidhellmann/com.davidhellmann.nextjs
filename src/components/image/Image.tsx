@@ -6,24 +6,25 @@ import {
 } from "@/graphql/graphql";
 
 export type ObjectFit = "cover" | "contain" | "fill" | "none" | "scale-down";
-export type Asset = Asset_DataFragment & Asset_TransformsFragment & {
-  dtmOptimizedImageAuto?: {
-    webpSrcset?: string | null;
-    placeholderImage?: string | null;
+export type Asset = Asset_DataFragment &
+  Asset_TransformsFragment & {
+    dtmOptimizedImageAuto?: {
+      webpSrcset?: string | null;
+      placeholderImage?: string | null;
+    };
+    alt?: string | null;
   };
-  alt?: string | null;
-};
 
-const tvImage= tv({
+const tvImage = tv({
   base: "",
   variants: {
     ratio: {
-      "unset": "",
-      "auto": "aspect-auto",
-      "landscape": "aspect-landscape",
-      "portrait": "aspect-portrait",
-      "square": "aspect-square",
-    }
+      unset: "",
+      auto: "aspect-auto",
+      landscape: "aspect-landscape",
+      portrait: "aspect-portrait",
+      square: "aspect-square",
+    },
   },
 });
 
@@ -50,7 +51,7 @@ export const Image: React.FC<ImageProps> = ({
   image = undefined,
   lazy = true,
   objectFit = "cover",
-  ratio= "landscape",
+  ratio = "landscape",
   alt = "",
   focalPoint = undefined,
   src = undefined,
@@ -75,9 +76,8 @@ export const Image: React.FC<ImageProps> = ({
   height = image?.height ?? height;
   srcset = image?.dtmOptimizedImageAuto?.webpSrcset ?? srcset;
   placeholder = image?.dtmOptimizedImageAuto?.placeholderImage ?? placeholder;
-  alt = !decorative ? image?.alt ?? image?.title ?? alt : "";
+  alt = !decorative ? (image?.alt ?? image?.title ?? alt) : "";
   lazy = !src ? false : lazy;
-
 
   const attr = {
     width,
@@ -89,7 +89,9 @@ export const Image: React.FC<ImageProps> = ({
   };
 
   const renderNoscript: React.ReactElement = (
-    <noscript><img src={src} alt={alt}/></noscript>
+    <noscript>
+      <img src={src} alt={alt} />
+    </noscript>
   );
 
   return (
@@ -97,7 +99,7 @@ export const Image: React.FC<ImageProps> = ({
       <img
         data-comp={compName}
         data-testid={compName}
-        className={tvImage({ratio, className})}
+        className={tvImage({ ratio, className })}
         {...attr}
         alt={alt}
         src={lazy && placeholder ? placeholder : src ? src : placeholder}

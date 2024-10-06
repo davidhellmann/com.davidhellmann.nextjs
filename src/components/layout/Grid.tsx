@@ -37,7 +37,7 @@ const tvGrid = tv({
       16: "gap-y-16",
       32: "gap-y-32",
     },
-  }
+  },
 });
 
 export type GridProps = {
@@ -49,8 +49,8 @@ export type GridProps = {
 export const Grid: React.FC<GridProps> = ({
   compName = "Grid",
   className,
-  columns= 3,
-  gap= 8,
+  columns = 3,
+  gap = 8,
   gapX = "unset",
   gapY = "unset",
   children = null,
@@ -66,7 +66,8 @@ export const Grid: React.FC<GridProps> = ({
         <div
           data-comp={compName}
           data-testid={compName}
-          className={tvGrid({ columns, gap, gapX, gapY, className })}>
+          className={tvGrid({ columns, gap, gapX, gapY, className })}
+        >
           {children}
         </div>
       )}
