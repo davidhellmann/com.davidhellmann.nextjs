@@ -123,7 +123,12 @@ export const Card: React.FC<CardTextProps> = ({
           href={!inlineLink ? linkHref : undefined}
         >
           {image && (
-            <Image className={slotImage()} image={image} ratio="landscape" />
+            <Image
+              className={slotImage()}
+              image={image}
+              alt={""}
+              ratio="landscape"
+            />
           )}
 
           <div className={`${slotContent()} ${padding}`}>

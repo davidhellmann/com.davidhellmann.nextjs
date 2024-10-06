@@ -35,6 +35,8 @@ const config = [
         {
           code: 120,
           ignoreComments: true,
+          ignoreStrings: true,
+          ignoreTemplateLiterals: true,
         },
       ],
 

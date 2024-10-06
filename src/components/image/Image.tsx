@@ -90,12 +90,14 @@ export const Image: React.FC<ImageProps> = ({
 
   const renderNoscript: React.ReactElement = (
     <noscript>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={src} alt={alt} />
     </noscript>
   );
 
   return (
     <>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         data-comp={compName}
         data-testid={compName}

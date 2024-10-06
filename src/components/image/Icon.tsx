@@ -41,7 +41,13 @@ export const Icon: React.FC<IconProps> = ({
           className={tvIcon({ size, className })}
         >
           {image && (
-            <Image image={image} ratio="square" noscript={false} lazy={false} />
+            <Image
+              alt={""}
+              image={image}
+              ratio="square"
+              noscript={false}
+              lazy={false}
+            />
           )}
 
           {inlineSvg && <InlineSvg svg={inlineSvg} />}
