@@ -1,0 +1,10 @@
+fragment entry_seo on EntryInterface {
+    seo (asArray: true) {
+        metaTagContainer
+        metaLinkContainer
+        metaTitleContainer
+        metaScriptContainer
+        metaJsonLdContainer
+        metaSiteVarsContainer
+    }
+}
